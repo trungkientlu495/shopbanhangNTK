@@ -1,0 +1,1682 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="keywords" content="MediaCenter, Template, eCommerce">
+<meta name="robots" content="all">
+
+<title>Flipmart premium HTML5 & CSS3 Template</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" th:href="@{\assets\css\bootstrap.min.css}">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Customizable CSS -->
+<link rel="stylesheet" th:href="@{\assets\css\main.css}">
+<link rel="stylesheet" th:href="@{\assets\css\blue.css}">
+<link rel="stylesheet" th:href="@{\assets\css\owl.carousel.css}">
+<link rel="stylesheet" th:href="@{\assets\css\owl.transitions.css}">
+<link rel="stylesheet" th:href="@{\assets\css\animate.min.css}">
+<link rel="stylesheet" th:href="@{\assets\css\rateit.css}">
+<link rel="stylesheet" th:href="@{\assets\css\bootstrap-select.min.css}">
+<link th:href="@{\assets\css\lightbox.css}" rel="stylesheet">
+
+
+
+<!-- Icons/Glyphs -->
+<link rel="stylesheet" th:href="@{\assets\css\font-awesome.css}">
+
+<!-- Fonts -->
+<link
+	href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700'
+	rel='stylesheet' type='text/css'>
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+
+
+</head>
+<body class="cnt-home">
+	<!-- ============================================== HEADER ============================================== -->
+	<header class="header-style-1">
+
+		<!-- ============================================== TOP MENU ============================================== -->
+		<div class="top-bar animate-dropdown">
+			<div class="container">
+				<div class="header-top-inner">
+					<div class="cnt-account">
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="icon fa fa-user"></i>Tài khoản
+									của tôi</a></li>
+							<li><a th:href="@{/User/wishlist}"><i
+									class="icon fa fa-heart"></i>Danh sách yêu thích</a></li>
+							<li><a th:href="@{/User/cart}"><i
+									class="icon fa fa-shopping-cart"></i>Giỏ hàng của tôi</a></li>
+							<li><a href="@{/User/historyOrder}"><i
+									class="icon fa fa-check"></i>Lịch sử mua hàng</a></li>
+							<li><a href="#" th:text="${kien}"><i
+									class="icon fa fa-lock"></i>Đăng nhập</a></li>
+						</ul>
+					</div>
+					<!-- /.cnt-account -->
+
+					<div class="cnt-block">
+						<ul class="list-unstyled list-inline">
+							<li class="dropdown dropdown-small"><a href="#"
+								class="dropdown-toggle" data-hover="dropdown"
+								data-toggle="dropdown"><span class="value">VNĐ </span><b
+									class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">VNĐ</a></li>
+									<li><a href="#">USD</a></li>
+								</ul></li>
+
+							<li class="dropdown dropdown-small"><a href="#"
+								class="dropdown-toggle" data-hover="dropdown"
+								data-toggle="dropdown"><span class="value">Vietnamese
+								</span><b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Vietnamese</a></li>
+									<li><a href="#">English</a></li>
+								</ul></li>
+						</ul>
+						<!-- /.list-unstyled -->
+					</div>
+					<!-- /.cnt-cart -->
+					<div class="clearfix"></div>
+				</div>
+				<!-- /.header-top-inner -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.header-top -->
+		<!-- ============================================== TOP MENU : END ============================================== -->
+		<div class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+						<!-- ============================================================= LOGO ============================================================= -->
+						<div class="logo">
+							<a href="home.html"> <img th:src="@{\assets\images\logo.png}"
+								alt="">
+
+							</a>
+						</div>
+						<!-- /.logo -->
+						<!-- ============================================================= LOGO : END ============================================================= -->
+					</div>
+					<!-- /.logo-holder -->
+
+					<div class="col-xs-12 col-sm-12 col-md-7 top-search-holder">
+						<!-- /.contact-row -->
+						<!-- ============================================================= SEARCH AREA ============================================================= -->
+						<div class="search-area">
+							<form>
+								<div class="control-group">
+
+									<ul class="categories-filter animate-dropdown">
+										<li class="dropdown"><a class="dropdown-toggle"
+											data-toggle="dropdown" href="category.html">Tìm kiếm </a></li>
+									</ul>
+
+									<input class="search-field"
+										placeholder="Nhập sản phẩm cần tìm..."> <a
+										class="search-button" href="#"></a>
+
+								</div>
+							</form>
+						</div>
+						<!-- /.search-area -->
+						<!-- ============================================================= SEARCH AREA : END ============================================================= -->
+					</div>
+					<!-- /.top-search-holder -->
+
+					<div
+						class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">
+						<!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+
+						<div class="dropdown dropdown-cart">
+							<a th:href="@{/User/cart}" class="dropdown-toggle lnk-cart">
+								<div class="items-cart-inner">
+									<div class="total-price-basket">
+										<span class="sign"><i
+											class="glyphicon glyphicon-shopping-cart"></i></span> <span
+											class="lbl">GIỎ HÀNG </span>
+									</div>
+									<style>
+.total-price-basket:hover {
+	opacity: 0.5;
+}
+</style>
+									<!-- div class="total-price-basket">
+										<span class="count" th:text="${slCart} + 'SP'">2</span>
+									</div> -->
+								</div>
+							</a>
+						</div>
+						<!-- /.dropdown-cart -->
+
+						<!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
+					</div>
+					<!-- /.top-cart-row -->
+				</div>
+				<!-- /.row -->
+
+			</div>
+			<!-- /.container -->
+
+		</div>
+		<!-- /.main-header -->
+
+		<!-- ============================================== NAVBAR ============================================== -->
+		<div class="header-nav animate-dropdown">
+			<div class="container">
+				<div class="yamm navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button data-target="#mc-horizontal-menu-collapse"
+							data-toggle="collapse" class="navbar-toggle collapsed"
+							type="button">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="nav-bg-class">
+						<div class="navbar-collapse collapse"
+							id="mc-horizontal-menu-collapse">
+							<div class="nav-outer">
+								<ul class="nav navbar-nav">
+									<li class="active dropdown yamm-fw"><a
+										th:href="@{/User/home}" data-hover="dropdown"
+										class="dropdown-toggle">Trang chủ</a></li>
+									<li class="dropdown mega-menu"><a
+										th:href="@{/User/search_product}" data-hover="dropdown"
+										class="dropdown-toggle">Sản phẩm <span
+											class="menu-label hot-menu hidden-xs">hot</span>
+									</a></li>
+									<!-- <li class="dropdown hidden-sm"><a href="#"
+										onclick="notices();">Sức khỏe & Làm đẹp <span
+											class="menu-label new-menu hidden-xs">new</span>
+									</a></li> -->
+									<li class="dropdown hidden-sm"><a href="#"
+										onclick="notices();">Giày</a></li>
+									<li class="dropdown"><a th:href="@{/User/wishlist}">Danh
+											Sách Yêu Thích</a></li>
+									<li class="dropdown"><a href="#" onclick="notices();">Thông
+											Tin Liên Hệ</a></li>
+									<li class="dropdown"><a
+										th:href="@{/User/dieukhoanvadichvu}">Điều Khoản & Dịch Vụ</a></li>
+									<li class="dropdown"><a th:href="@{/User/cart}"
+										class="dropdown-toggle" data-hover="dropdown">Giỏ Hàng</a></li>
+									<li class="dropdown"><a th:href="@{/User/cauhoithuonggap}"
+										class="dropdown-toggle" data-hover="dropdown">Các Câu Hỏi
+											Thường Gặp</a></li>
+								</ul>
+								<!-- /.navbar-nav -->
+								<div class="clearfix"></div>
+							</div>
+							<!-- /.nav-outer -->
+						</div>
+						<!-- /.navbar-collapse -->
+
+					</div>
+					<!-- /.nav-bg-class -->
+				</div>
+				<!-- /.navbar-default -->
+			</div>
+			<!-- /.container-class -->
+
+		</div>
+		<!-- /.header-nav -->
+		<!-- ============================================== NAVBAR : END ============================================== -->
+
+	</header>
+
+	<!-- ============================================== HEADER : END ============================================== -->
+	<div class="breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-inner">
+				<ul class="list-inline list-unstyled">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Clothings</a></li>
+					<li class='active'>Samsung Galaxy Watch6</li>
+				</ul>
+			</div>
+			<!-- /.breadcrumb-inner -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.breadcrumb -->
+	<div class="body-content outer-top-xs">
+		<div class='container'>
+			<div class='row single-product'>
+				<div class='col-md-3 sidebar'>
+					<div class="sidebar-module-container">
+						<div class="home-banner outer-top-n">
+							<img th:src="@{\assets\images\banners\LHS-banner.jpg}"
+								alt="Image">
+						</div>
+
+
+
+						<!-- ============================================== HOT DEALS ============================================== -->
+						<div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs">
+							<h3 class="section-title">Ưu đãi lớn</h3>
+							<div
+								class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
+
+								<div class="item">
+									<div class="products">
+										<div class="hot-deal-wrapper">
+											<div class="image">
+												<img th:src="@{\assets\images\hot-deals\p5.jpg}" alt="">
+											</div>
+											<div class="sale-offer-tag">
+												<span>35%<br>off
+												</span>
+											</div>
+											<div class="timing-wrapper">
+												<div class="box-wrapper">
+													<div class="date box">
+														<span class="key">120</span> <span class="value">Days</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper">
+													<div class="hour box">
+														<span class="key">20</span> <span class="value">HRS</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper">
+													<div class="minutes box">
+														<span class="key">36</span> <span class="value">MINS</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper hidden-md">
+													<div class="seconds box">
+														<span class="key">60</span> <span class="value">SEC</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.hot-deal-wrapper -->
+
+										<div class="product-info text-left m-t-20">
+											<h3 class="name">
+												<a href="#">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+
+											<div class="product-price">
+												<span class="price"> $600.00 </span> <span
+													class="price-before-discount">$800.00</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+
+												<div class="add-cart-button btn-group">
+													<button class="btn btn-primary icon" data-toggle="dropdown"
+														type="button">
+														<i class="fa fa-shopping-cart"></i>
+													</button>
+													<button class="btn btn-primary cart-btn" type="button">Add
+														to cart</button>
+
+												</div>
+
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+								</div>
+								<div class="item">
+									<div class="products">
+										<div class="hot-deal-wrapper">
+											<div class="image">
+												<img th:src="@{\assets\images\products\p6.jpg}" alt="">
+											</div>
+											<div class="sale-offer-tag">
+												<span>35%<br>off
+												</span>
+											</div>
+											<div class="timing-wrapper">
+												<div class="box-wrapper">
+													<div class="date box">
+														<span class="key">120</span> <span class="value">Days</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper">
+													<div class="hour box">
+														<span class="key">20</span> <span class="value">HRS</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper">
+													<div class="minutes box">
+														<span class="key">36</span> <span class="value">MINS</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper hidden-md">
+													<div class="seconds box">
+														<span class="key">60</span> <span class="value">SEC</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.hot-deal-wrapper -->
+
+										<div class="product-info text-left m-t-20">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+
+											<div class="product-price">
+												<span class="price"> $600.00 </span> <span
+													class="price-before-discount">$800.00</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+
+												<div class="add-cart-button btn-group">
+													<button class="btn btn-primary icon" data-toggle="dropdown"
+														type="button">
+														<i class="fa fa-shopping-cart"></i>
+													</button>
+													<button class="btn btn-primary cart-btn" type="button">Add
+														to cart</button>
+
+												</div>
+
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+								</div>
+								<div class="item">
+									<div class="products">
+										<div class="hot-deal-wrapper">
+											<div class="image">
+												<img th:src="@{\assets\images\products\p7.jpg}" alt="">
+											</div>
+											<div class="sale-offer-tag">
+												<span>35%<br>off
+												</span>
+											</div>
+											<div class="timing-wrapper">
+												<div class="box-wrapper">
+													<div class="date box">
+														<span class="key">120</span> <span class="value">Days</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper">
+													<div class="hour box">
+														<span class="key">20</span> <span class="value">HRS</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper">
+													<div class="minutes box">
+														<span class="key">36</span> <span class="value">MINS</span>
+													</div>
+												</div>
+
+												<div class="box-wrapper hidden-md">
+													<div class="seconds box">
+														<span class="key">60</span> <span class="value">SEC</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.hot-deal-wrapper -->
+
+										<div class="product-info text-left m-t-20">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+
+											<div class="product-price">
+												<span class="price"> $600.00 </span> <span
+													class="price-before-discount">$800.00</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+
+												<div class="add-cart-button btn-group">
+													<button class="btn btn-primary icon" data-toggle="dropdown"
+														type="button">
+														<i class="fa fa-shopping-cart"></i>
+													</button>
+													<button class="btn btn-primary cart-btn" type="button">Add
+														to cart</button>
+
+												</div>
+
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+								</div>
+
+
+							</div>
+							<!-- /.sidebar-widget -->
+						</div>
+						<!-- ============================================== HOT DEALS: END ============================================== -->
+
+						<!-- ============================================== NEWSLETTER ============================================== -->
+						<div
+							class="sidebar-widget newsletter wow fadeInUp outer-bottom-small outer-top-vs">
+							<h3 class="section-title">Thông báo</h3>
+							<div class="sidebar-widget-body outer-top-xs">
+								<p>Đăng ký nhận thông báo của chúng tôi!</p>
+								<form>
+									<div class="form-group">
+										<label class="sr-only" for="exampleInputEmail1">Email
+											address</label> <input type="email" class="form-control"
+											id="exampleInputEmail1"
+											placeholder="Theo dõi thông báo của chúng tôi">
+									</div>
+									<button class="btn btn-primary">Đăng ký</button>
+								</form>
+							</div>
+							<!-- /.sidebar-widget-body -->
+						</div>
+						<!-- /.sidebar-widget -->
+						<!-- ============================================== NEWSLETTER: END ============================================== -->
+
+						<!-- ============================================== Testimonials============================================== -->
+						<div class="sidebar-widget  wow fadeInUp outer-top-vs ">
+							<div id="advertisement" class="advertisement">
+								<div class="item">
+									<div class="avatar">
+										<img th:src="@{\assets\images\testimonials\member1.png}"
+											alt="Image">
+									</div>
+									<div class="testimonials">
+										<em>"</em> Các bạn của tôi, tôi không phải là nơi trú ẩn nhẹ
+										nhàng của bất kỳ loại bệnh tật nào. Bây giờ, hãy mùa cho tôi
+										nỗi sợ hãi và rắc rối, nhưng hãy tiếp tục.<em>"</em>
+									</div>
+									<div class="clients_author">
+										John Doe <span>Abc Company</span>
+									</div>
+									<!-- /.container-fluid -->
+								</div>
+
+								<div class="item">
+									<div class="avatar">
+										<img th:src="@{\assets\images\testimonials\member1.png}"
+											alt="Image">
+									</div>
+									<div class="testimonials">
+										<em>"</em> Các bạn của tôi, tôi không phải là nơi trú ẩn nhẹ
+										nhàng của bất kỳ loại bệnh tật nào. Bây giờ, hãy mùa cho tôi
+										nỗi sợ hãi và rắc rối, nhưng hãy tiếp tục.<em>"</em>
+									</div>
+									<div class="clients_author">
+										John Doe <span>Abc Company</span>
+									</div>
+									<!-- /.container-fluid -->
+								</div>
+
+								<div class="item">
+									<div class="avatar">
+										<img th:src="@{\assets\images\testimonials\member1.png}"
+											alt="Image">
+									</div>
+									<div class="testimonials">
+										<em>"</em> Các bạn của tôi, tôi không phải là nơi trú ẩn nhẹ
+										nhàng của bất kỳ loại bệnh tật nào. Bây giờ, hãy mùa cho tôi
+										nỗi sợ hãi và rắc rối, nhưng hãy tiếp tục.<em>"</em>
+									</div>
+									<div class="clients_author">
+										John Doe <span>Abc Company</span>
+									</div>
+									<!-- /.container-fluid -->
+								</div>
+
+							</div>
+							<!-- /.owl-carousel -->
+						</div>
+
+						<!-- ============================================== Testimonials: END ============================================== -->
+
+
+
+					</div>
+				</div>
+				<!-- /.sidebar -->
+				<div class='col-md-9'>
+					<div class="detail-block">
+						<div class="row  wow fadeInUp">
+
+							<div class="col-xs-12 col-sm-6 col-md-5 gallery-holder">
+								<div
+									class="product-item-holder size-big single-product-gallery small-gallery">
+
+									<div id="owl-single-product">
+										<div class="single-product-gallery-item" id="slide1">
+											<a data-lightbox="image-1" data-title="Gallery"
+												th:href="${productEntity.imageUrl}"> <img
+												class="img-responsive" alt=""
+												th:src="${productEntity.imageUrl}"
+												th:data-echo="${productEntity.imageUrl}">
+											</a>
+										</div>
+										<!-- /.single-product-gallery-item -->
+
+									</div>
+									<!-- /.single-product-slider -->
+
+								</div>
+								<!-- /.single-product-gallery -->
+								<div>
+									<h5>
+										Lượt thích sản phẩm (1000 <i class="fa-solid fa-heart"></i>)
+									</h5>
+								</div>
+							</div>
+							<!-- /.gallery-holder -->
+							<div class='col-sm-6 col-md-7 product-info-block'>
+								<div class="product-info">
+									<h1 class="name" th:text="${productEntity.name}">Samsung
+										Galaxy Watch6</h1>
+
+									<div class="rating-reviews m-t-20">
+										<div class="row">
+											<div class="col-sm-3">
+												<div class="rating rateit-small"></div>
+											</div>
+											<div class="col-sm-8">
+												<div class="reviews">
+													<a href="#" class="lnk" th:utext= "'('+${tongstar}+' đánh giá)'">(13 Đánh giá)</a>
+												</div>
+											</div>
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.rating-reviews -->
+
+									<div class="stock-container info-container m-t-10">
+										<div class="row">
+											<div class="col-sm-2">
+												<div class="stock-box">
+													<span class="label">Trong kho :</span>
+												</div>
+											</div>
+											<div class="col-sm-9">
+												<div class="stock-box">
+													<span class="value" th:text="${productEntity.tinhtrang}">Trong
+														kho</span>
+												</div>
+											</div>
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.stock-container -->
+
+									<div class="description-container m-t-20">Điều quan trọng
+										là phải chăm sóc bệnh nhân, được bệnh nhân theo dõi, nhưng
+										điều đó sẽ xảy ra vào thời điểm có rất nhiều công sức và đau
+										đớn. Để đi đến chi tiết nhỏ nhất, không ai nên thực hiện bất
+										kỳ loại công việc nào trừ khi anh ta thu được lợi ích nào đó
+										từ nó.</div>
+									<!-- /.description-container -->
+
+									<div class="price-container info-container m-t-20">
+										<div class="row">
+
+
+											<div class="col-sm-6">
+												<div class="price-box">
+													<span class="price" th:utext="${productEntity.price + 'đ'}">$800.00</span>
+													<span class="price-strike"
+														th:utext="${productEntity.priceBegin + 'đ'}">$900.00</span>
+												</div>
+											</div>
+
+											<div class="col-sm-6">
+												<div class="favorite-button m-t-10">
+													<a class="btn btn-primary" data-toggle="tooltip"
+														data-placement="right" title="Wishlist"
+														th:href="@{/User/createWishlist(id=${productEntity.id})}"
+														onclick="notificationWishlist()"> <i
+														class="fa fa-heart"></i>
+													</a> <a class="btn btn-primary" data-toggle="tooltip"
+														data-placement="right" title="Add to Compare" href="#">
+														<i class="fa fa-signal"></i>
+													</a> <a class="btn btn-primary" data-toggle="tooltip"
+														data-placement="right" title="E-mail" href="#"> <i
+														class="fa fa-envelope"></i>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.price-container -->
+									<form th:action="@{/User/createCart}">
+										<input type="number" id="id" name="id" style="display: none;"
+											th:value="${productEntity.id}">
+										<div class="quantity-container info-container">
+											<div class="row">
+												<div class="col-sm-3">
+													<span class="label">Số lượng :</span>
+												</div>
+												<div class="col-sm-3">
+													<div class="cart-quantity">
+														<div class="a" style="display: flex;">
+															<button id="minus" onclick="minusQuantity();">-</button>
+															<input type="text" value="1" name="soluong"
+																style="width: 50px; text-align: center;" id="soluong">
+															<button id="plus" onclick="plusQuantity();">+</button>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<h5
+														th:utext="'Có sẵn: ' + ${productEntity.quantitySold} + ' sản phẩm'">Có
+														sẵn: 224 sản phẩm</h5>
+												</div>
+
+
+											</div>
+											<!-- /.row -->
+										</div>
+
+										<!-- /.quantity-container -->
+										<div style="display: flex;" class="row">
+											<div class="col-sm-5">
+												<button type="submit" class="btn btn-primary"
+													onclick="notificationcreateproductCart()">
+													<i class="fa fa-shopping-cart inner-right-vs"></i> Thêm vào
+													giỏ hàng </a>
+											</div>
+
+											<div class="col-sm-5">
+												<a onclick="muangayDetail(this.getAttribute('data-id'))"
+													th:data-id="${productEntity.id}"
+													th:href="@{/User/muangayrender(idProduct=${productEntity.id})}"
+													class="btn btn-primary"> <i
+													class="fa fa-shopping-cart inner-right-vs"></i> Mua ngay
+												</a>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<!-- /.product-info -->
+							</div>
+							<!-- /.col-sm-7 -->
+						</div>
+						<!-- /.row -->
+					</div>
+
+					<div class="product-tabs inner-bottom-xs  wow fadeInUp">
+						<div class="row">
+							<div class="col-sm-3">
+								<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
+									<li class="active"><a data-toggle="tab"
+										href="#description">Miêu Tả</a></li>
+									<li><a data-toggle="tab" href="#review">Bình Luận</a></li>
+									<!-- <li><a data-toggle="tab" href="#tags">Bình luận</a></li> -->
+								</ul>
+								<!-- /.nav-tabs #product-tabs -->
+							</div>
+							<div class="col-sm-9">
+
+								<div class="tab-content">
+
+									<div id="description" class="tab-pane in active">
+										<div class="product-tab">
+											<p class="text">
+												Điều quan trọng là phải chăm sóc bệnh nhân, được bệnh nhân
+												theo dõi, nhưng điều đó sẽ xảy ra vào thời điểm có rất nhiều
+												công sức và đau đớn. Để đi đến chi tiết nhỏ nhất, không ai
+												nên thực hiện bất kỳ loại công việc nào trừ khi anh ta thu
+												được lợi ích nào đó từ nó. Đừng tức giận với nỗi đau trong
+												sự khiển trách trong niềm vui mà anh ấy muốn được thoát khỏi
+												nỗi đau với hy vọng rằng không có sự sinh sản. Trừ khi họ bị
+												dục vọng làm cho mù quáng, nếu không họ sẽ không bước ra; đó
+												là lỗi của những ai từ bỏ bổn phận và mềm lòng, tức là lao
+												động của mình. Điều quan trọng là phải chăm sóc bệnh nhân,
+												được bệnh nhân theo dõi, nhưng điều đó sẽ xảy ra vào thời
+												điểm có rất nhiều công sức và đau đớn. Để đi đến chi tiết
+												nhỏ nhất, không ai nên thực hiện bất kỳ loại công việc nào
+												trừ khi anh ta thu được lợi ích nào đó từ nó. <br> <br>
+												Đừng tức giận với nỗi đau trong sự khiển trách trong niềm
+												vui mà anh ấy muốn được thoát khỏi nỗi đau với hy vọng rằng
+												không có sự sinh sản. Trừ khi họ bị dục vọng làm cho mù
+												quáng, nếu không họ sẽ không bước ra; đó là lỗi của những ai
+												từ bỏ bổn phận và mềm lòng, tức là lao động của mình.
+											</p>
+										</div>
+									</div>
+									<!-- /.tab-pane -->
+
+									<div id="review" class="tab-pane">
+										<div class="product-tab">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th style="text-align: center;">5 <i
+															class="fa-solid fa-star"></i> (<span th:text="${five}">0</span>)
+														</th>
+														<th style="text-align: center;">4 <i
+															class="fa-solid fa-star"></i> (<span th:text="${four}">0</span>)
+														</th>
+														<th style="text-align: center;">3<i
+															class="fa-solid fa-star"></i> (<span th:text="${three}">0</span>)
+														</th>
+														<th style="text-align: center;">2 <i
+															class="fa-solid fa-star"></i> (<span th:text="${two}">0</span>)
+														</th>
+														<th style="text-align: center;">1 <i
+															class="fa-solid fa-star"></i> (<span th:text="${one}">0</span>)
+														</th>
+													</tr>
+												</thead>
+
+											</table>
+											<div class="product-add-review">
+												<h4 class="title">Viết đánh giá của riêng bạn</h4>
+
+												<div class="container mt-3">
+													<form
+														th:action="@{/User/comment(idProduct=${productEntity.id})}"
+														method="post">
+														<div class="form-check">
+															<input type="radio" class="form-check-input" id="radio1"
+																name="optradio" value="1" checked> <label
+																class="form-check-label" for="radio1">1 <i
+																class="fa-solid fa-star"></i></label>
+														</div>
+														<div class="form-check">
+															<input type="radio" class="form-check-input" id="radio2"
+																name="optradio" value="2"> <label
+																class="form-check-label" for="radio2">2 <i
+																class="fa-solid fa-star"></i></label>
+														</div>
+														<div class="form-check">
+															<input type="radio" class="form-check-input" id="radio3"
+																name="optradio" value="3"> <label
+																class="form-check-label" for="radio3">3 <i
+																class="fa-solid fa-star"></i></label>
+														</div>
+														<div class="form-check">
+															<input type="radio" class="form-check-input" id="radio4"
+																name="optradio" value="4"> <label
+																class="form-check-label" for="radio4">4 <i
+																class="fa-solid fa-star"></i></label>
+														</div>
+														<div class="form-check">
+															<input type="radio" class="form-check-input" id="radio5"
+																name="optradio" value="5"> <label
+																class="form-check-label" for="radio5">5 <i
+																class="fa-solid fa-star"></i></label>
+														</div>
+														<div>
+															<label style="padding: 10px 10px 10px 0">Nhập
+																bình luận: </label> <input type="text" style="width: 30%"
+																name="content" accept-charset="utf-8">
+															<button class="primary" type="submit">Đăng bình
+																luận</button>
+														</div>
+													</form>
+												</div>
+
+											</div>
+											<div class="product-reviews" style="padding: 20px 0">
+												<h4 class="title">Phản Hồi Khách Hàng</h4>
+												<h5 th:if="${commentModels.getContent().isEmpty()}">CHƯA
+													CÓ BÌNH LUẬN NÀO</h5>
+												<div class="reviews">
+													<div class="review"
+														th:each="commentModel : ${commentModels.content}">
+														<div class="review-title">
+															<div>
+																<div style="padding: 5px 0">
+																	Số sao đánh giá: <span
+																		th:text="${commentModel.review.startCounter}">1</span><i
+																		class="fa-solid fa-star" style="padding-left: 2px"></i>
+																</div>
+																<span th:text="${commentModel.userEntity.name}">Nguyễn
+																	Trung Kiên</span> <i class="fa fa-calendar"
+																	style="padding: 0 5px"></i><span th:text="${commentModel.createDate}">1 ngày trước</span></span>
+															</div>
+
+														</div>
+														<div class="text" th:utext="${commentModel.content}">"Bản
+															thân nỗi đau đã quan trọng, sau đó sẽ là sự huấn luyện
+															của những người ưu tú. Sẽ có người gánh chịu nó."</div>
+													</div>
+
+												</div>
+												<!-- /.reviews -->
+											</div>
+											<tfoot>
+												<ul
+													style="list-style-type: none; display: flex; justify-content: center;">
+													<li th:if="${tranghientai} > 0"><a
+														th:href="@{/User/detail(id=${productEntity.id},numberPage=${tranghientai-1})}"><<</a>
+													</li>
+													<li><a
+														th:href="@{/User/detail(id=${productEntity.id},numberPage=${tranghientai})}"
+														th:classappend="${tranghientai==tranghientai} ? 'kien' : ''"
+														th:text="${tranghientai+1}">1</a></li>
+													<li th:if="${tranghientai} < ${tongsotrang-1} "><a
+														th:href="@{/User/detail(id=${productEntity.id},numberPage=${tranghientai+1})}">
+															>> </a></li>
+												</ul>
+												<style>
+li a {
+	color: #000;
+	padding: 5px 10px;
+}
+
+/* li {
+	padding: 5px 10px;
+} */
+li:hover {
+	cursor: pointer;
+}
+
+.kien {
+	background-color: #ccc;
+	color: #fff;
+}
+</style>
+											</tfoot>
+											<!-- /.product-reviews -->
+
+
+
+
+											<!-- /.product-add-review -->
+
+										</div>
+										<!-- /.product-tab -->
+									</div>
+									<!-- /.tab-pane -->
+
+									<div id="tags" class="tab-pane">
+										<div class="product-tag">
+
+											<h4 class="title">Bình luận về sản phẩm</h4>
+											<form role="form" class="form-inline form-cnt">
+												<div class="form-container">
+
+													<div class="form-group">
+														<label for="exampleInputTag">Nhập bình luận: </label> <input
+															type="email" id="exampleInputTag"
+															class="form-control txt">
+													</div>
+													<button class="btn btn-upper btn-primary" type="submit">Đăng
+														bình luận</button>
+												</div>
+												<!-- /.form-container -->
+											</form>
+											<!-- /.form-cnt -->
+											<div>
+												<h4 class="title" style="padding: 20px 0 0 0;">Xem các
+													bình luận khác :</h4>
+											</div>
+										</div>
+										<!-- /.product-tab -->
+									</div>
+									<!-- /.tab-pane -->
+
+								</div>
+								<!-- /.tab-content -->
+							</div>
+							<!-- /.col -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.product-tabs -->
+
+					<!-- ============================================== UPSELL PRODUCTS ============================================== -->
+					<section class="section featured-product wow fadeInUp">
+						<h3 class="section-title">Sản Phẩm Khác</h3>
+						<div
+							class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
+
+							<div class="item item-carousel">
+								<div class="products">
+
+									<div class="product">
+										<div class="product-image">
+											<div class="image">
+												<a href="detail.html"><img
+													th:src="@{\assets\images\products\p1.jpg}" alt=""></a>
+											</div>
+											<!-- /.image -->
+
+											<div class="tag sale">
+												<span>sale</span>
+											</div>
+										</div>
+										<!-- /.product-image -->
+
+
+										<div class="product-info text-left">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+											<div class="description"></div>
+
+											<div class="product-price">
+												<span class="price"> $650.99 </span> <span
+													class="price-before-discount">$ 800</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon"
+															data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>
+														</button>
+														<button class="btn btn-primary cart-btn" type="button">Add
+															to cart</button>
+
+													</li>
+
+													<li class="lnk wishlist"><a class="add-to-cart"
+														href="detail.html" title="Wishlist"> <i
+															class="icon fa fa-heart"></i>
+													</a></li>
+
+													<li class="lnk"><a class="add-to-cart"
+														href="detail.html" title="Compare"> <i
+															class="fa fa-signal"></i>
+													</a></li>
+												</ul>
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+									<!-- /.product -->
+
+								</div>
+								<!-- /.products -->
+							</div>
+							<!-- /.item -->
+
+							<div class="item item-carousel">
+								<div class="products">
+
+									<div class="product">
+										<div class="product-image">
+											<div class="image">
+												<a href="detail.html"><img
+													th:src="@{\assets\images\products\p2.jpg}" alt=""></a>
+											</div>
+											<!-- /.image -->
+
+											<div class="tag sale">
+												<span>sale</span>
+											</div>
+										</div>
+										<!-- /.product-image -->
+
+
+										<div class="product-info text-left">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+											<div class="description"></div>
+
+											<div class="product-price">
+												<span class="price"> $650.99 </span> <span
+													class="price-before-discount">$ 800</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon"
+															data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>
+														</button>
+														<button class="btn btn-primary cart-btn" type="button">Add
+															to cart</button>
+
+													</li>
+
+													<li class="lnk wishlist"><a class="add-to-cart"
+														href="detail.html" title="Wishlist"> <i
+															class="icon fa fa-heart"></i>
+													</a></li>
+
+													<li class="lnk"><a class="add-to-cart"
+														href="detail.html" title="Compare"> <i
+															class="fa fa-signal"></i>
+													</a></li>
+												</ul>
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+									<!-- /.product -->
+
+								</div>
+								<!-- /.products -->
+							</div>
+							<!-- /.item -->
+
+							<div class="item item-carousel">
+								<div class="products">
+
+									<div class="product">
+										<div class="product-image">
+											<div class="image">
+												<a href="detail.html"><img
+													th:src="@{\assets\images\products\p3.jpg}" alt=""></a>
+											</div>
+											<!-- /.image -->
+
+											<div class="tag hot">
+												<span>hot</span>
+											</div>
+										</div>
+										<!-- /.product-image -->
+
+
+										<div class="product-info text-left">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+											<div class="description"></div>
+
+											<div class="product-price">
+												<span class="price"> $650.99 </span> <span
+													class="price-before-discount">$ 800</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon"
+															data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>
+														</button>
+														<button class="btn btn-primary cart-btn" type="button">Add
+															to cart</button>
+
+													</li>
+
+													<li class="lnk wishlist"><a class="add-to-cart"
+														href="detail.html" title="Wishlist"> <i
+															class="icon fa fa-heart"></i>
+													</a></li>
+
+													<li class="lnk"><a class="add-to-cart"
+														href="detail.html" title="Compare"> <i
+															class="fa fa-signal"></i>
+													</a></li>
+												</ul>
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+									<!-- /.product -->
+
+								</div>
+								<!-- /.products -->
+							</div>
+							<!-- /.item -->
+
+							<div class="item item-carousel">
+								<div class="products">
+
+									<div class="product">
+										<div class="product-image">
+											<div class="image">
+												<a href="detail.html"><img
+													th:src="@{\assets\images\products\p4.jpg}" alt=""></a>
+											</div>
+											<!-- /.image -->
+
+											<div class="tag new">
+												<span>new</span>
+											</div>
+										</div>
+										<!-- /.product-image -->
+
+
+										<div class="product-info text-left">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+											<div class="description"></div>
+
+											<div class="product-price">
+												<span class="price"> $650.99 </span> <span
+													class="price-before-discount">$ 800</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon"
+															data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>
+														</button>
+														<button class="btn btn-primary cart-btn" type="button">Add
+															to cart</button>
+
+													</li>
+
+													<li class="lnk wishlist"><a class="add-to-cart"
+														href="detail.html" title="Wishlist"> <i
+															class="icon fa fa-heart"></i>
+													</a></li>
+
+													<li class="lnk"><a class="add-to-cart"
+														href="detail.html" title="Compare"> <i
+															class="fa fa-signal"></i>
+													</a></li>
+												</ul>
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+									<!-- /.product -->
+
+								</div>
+								<!-- /.products -->
+							</div>
+							<!-- /.item -->
+
+							<div class="item item-carousel">
+								<div class="products">
+
+									<div class="product">
+										<div class="product-image">
+											<div class="image">
+												<a href="detail.html"><img
+													th:src="@{\assets\images\blank.gif}"
+													th:data-echo="@{\assets/images/products/p5.jpg}" alt=""></a>
+											</div>
+											<!-- /.image -->
+
+											<div class="tag hot">
+												<span>hot</span>
+											</div>
+										</div>
+										<!-- /.product-image -->
+
+
+										<div class="product-info text-left">
+											<h3 class="name">
+												<a href="detail.html">Floral Print Buttoned</a>
+											</h3>
+											<div class="rating rateit-small"></div>
+											<div class="description"></div>
+
+											<div class="product-price">
+												<span class="price"> $650.99 </span> <span
+													class="price-before-discount">$ 800</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon"
+															data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>
+														</button>
+														<button class="btn btn-primary cart-btn" type="button">Add
+															to cart</button>
+
+													</li>
+
+													<li class="lnk wishlist"><a class="add-to-cart"
+														href="detail.html" title="Wishlist"> <i
+															class="icon fa fa-heart"></i>
+													</a></li>
+
+													<li class="lnk"><a class="add-to-cart"
+														href="detail.html" title="Compare"> <i
+															class="fa fa-signal"></i>
+													</a></li>
+												</ul>
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+									<!-- /.product -->
+
+								</div>
+								<!-- /.products -->
+							</div>
+							<!-- /.item -->
+
+							<div class="item item-carousel">
+								<div class="products">
+
+									<div class="product">
+										<div class="product-image">
+											<div class="image">
+												<a href="detail.html"><img
+													th:src="@{\assets\images\blank.gif}"
+													th:data-echo="@{\assets/images/products/p6.jpg}" alt=""></a>
+											</div>
+											<!-- /.image -->
+
+											<div class="tag new">
+												<span>new</span>
+											</div>
+										</div>
+										<!-- /.product-image -->
+
+
+										<div class="product-info text-left">
+											<h3 class="name">
+												<a href="detail.html">Samsung Galaxy Watch6 </a>
+											</h3>
+											<div class="rating rateit-small"></div>
+											<div class="description"></div>
+
+											<div class="product-price">
+												<span class="price"> $650.99 </span> <span
+													class="price-before-discount">$ 800</span>
+
+											</div>
+											<!-- /.product-price -->
+
+										</div>
+										<!-- /.product-info -->
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon"
+															data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>
+														</button>
+														<button class="btn btn-primary cart-btn" type="button">Add
+															to cart</button>
+
+													</li>
+
+													<li class="lnk wishlist"><a class="add-to-cart"
+														href="detail.html" title="Wishlist"> <i
+															class="icon fa fa-heart"></i>
+													</a></li>
+
+													<li class="lnk"><a class="add-to-cart"
+														href="detail.html" title="Compare"> <i
+															class="fa fa-signal"></i>
+													</a></li>
+												</ul>
+											</div>
+											<!-- /.action -->
+										</div>
+										<!-- /.cart -->
+									</div>
+									<!-- /.product -->
+
+								</div>
+								<!-- /.products -->
+							</div>
+							<!-- /.item -->
+						</div>
+						<!-- /.home-owl-carousel -->
+					</section>
+					<!-- /.section -->
+					<!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
+
+				</div>
+				<!-- /.col -->
+				<div class="clearfix"></div>
+			</div>
+			<!-- /.row -->
+			<!-- ============================================== BRANDS CAROUSEL ============================================== -->
+			<div id="brands-carousel" class="logo-slider wow fadeInUp">
+
+				<div class="logo-slider-inner">
+					<div id="brand-slider"
+						class="owl-carousel brand-slider custom-carousel owl-theme">
+						<div class="item m-t-15">
+							<a href="#" class="image"> <img
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:data-echo="@{\assets/images/brands/brand4.png}"
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:data-echo="@{\assets/images/brands/brand4.png}"
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:data-echo="@{\assets/images/brands/brand1.png}"
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+
+						<div class="item">
+							<a href="#" class="image"> <img
+								th:data-echo="@{\assets/images/brands/brand5.png}"
+								th:src="@{\assets\images\blank.gif}" alt="">
+							</a>
+						</div>
+						<!--/.item-->
+					</div>
+					<!-- /.owl-carousel #logo-slider -->
+				</div>
+				<!-- /.logo-slider-inner -->
+
+			</div>
+			<!-- /.logo-slider -->
+			<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.body-content -->
+
+	<!-- ============================================================= FOOTER ============================================================= -->
+	<footer id="footer" class="footer color-bg">
+
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">Liên hệ chúng tôi</h4>
+						</div>
+						<div class="module-body">
+							<ul class="toggle-footer">
+								<li class="media">
+									<div class="pull-left">
+										<span class="icon fa-stack fa-lg"> <i
+											class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
+									<div class="media-body">
+										<p>ThemesGround, 789 Mainrd, Anytown, CA 12345 Hoa Kỳ</p>
+									</div>
+								</li>
+								<li class="media">
+									<div class="pull-left">
+										<span class="icon fa-stack fa-lg"> <i
+											class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
+									<div class="media-body">
+										<p>
+											+(84) 987580175<br> +(888) 456-7890
+										</p>
+									</div>
+								</li>
+								<li class="media">
+									<div class="pull-left">
+										<span class="icon fa-stack fa-lg"> <i
+											class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
+									<div class="media-body">
+										<span><a href="#">nguyentrungk495@gmail.com</a></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">Dịch vụ khách hàng</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class='list-unstyled'>
+								<li class="first"><a href="#" title="Contact us">Tài
+										Khoản Của Tôi</a></li>
+								<li><a href="#" title="About us">Lịch sử đơn hàng</a></li>
+								<li><a href="#" title="faq">Câu hỏi thường gặp</a></li>
+								<li><a href="#" title="Popular Searches">Khuyến mãi</a></li>
+								<li class="last"><a href="#" title="Where is my order?">Trung
+										tâm trợ giúp</a></li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">TẬP ĐOÀN</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class='list-unstyled'>
+								<li class="first"><a title="Your Account" href="#">Về
+										chúng tôi</a></li>
+								<li><a title="Information" href="#">Dịch vụ khách hàng</a></li>
+								<li><a title="Addresses" href="#">Công ty</a></li>
+								<li><a title="Addresses" href="#">Quan hệ đầu tư</a></li>
+								<li class="last"><a title="Orders History" href="#">Tìm
+										kiếm nâng cao</a></li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">TẠI SAO CHỌN CHÚNG TÔI</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class='list-unstyled'>
+								<li class="first"><a href="#" title="About us">Hướng
+										dẫn mua sắm</a></li>
+								<li><a href="#" title="Blog">Blog</a></li>
+								<li><a href="#" title="Company">Công ty</a></li>
+								<li><a href="#" title="Investor Relations">Quan hệ đầu
+										tư</a></li>
+								<li class=" last"><a href="contact-us.html"
+									title="Suppliers">Liên hệ chúng tôi</a></li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright-bar">
+			<div class="container">
+				<div class="col-xs-12 col-sm-6 no-padding social">
+					<ul class="link">
+						<li class="fb pull-left"><a target="_blank" rel="nofollow"
+							href="#" title="Facebook"></a></li>
+						<li class="tw pull-left"><a target="_blank" rel="nofollow"
+							href="#" title="Twitter"></a></li>
+						<li class="googleplus pull-left"><a target="_blank"
+							rel="nofollow" href="#" title="GooglePlus"></a></li>
+						<li class="rss pull-left"><a target="_blank" rel="nofollow"
+							href="#" title="RSS"></a></li>
+						<li class="pintrest pull-left"><a target="_blank"
+							rel="nofollow" href="#" title="PInterest"></a></li>
+						<li class="linkedin pull-left"><a target="_blank"
+							rel="nofollow" href="#" title="Linkedin"></a></li>
+						<li class="youtube pull-left"><a target="_blank"
+							rel="nofollow" href="#" title="Youtube"></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6 no-padding">
+					<div class="clearfix payment-methods">
+						<ul>
+							<li><img th:src="@{\assets\images\payments\1.png}" alt=""></li>
+							<li><img th:src="@{\assets\images\payments\2.png}" alt=""></li>
+							<li><img th:src="@{\assets\images\payments\3.png}" alt=""></li>
+							<li><img th:src="@{\assets\images\payments\4.png}" alt=""></li>
+							<li><img th:src="@{\assets\images\payments\5.png}" alt=""></li>
+						</ul>
+					</div>
+					<!-- /.payment-methods -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	<style>
+input:focus {
+	outline: none !important;
+}
+</style>
+	<!-- ============================================================= FOOTER : END============================================================= -->
+
+
+	<!-- For demo purposes – can be removed on production -->
+
+
+	<!-- For demo purposes – can be removed on production : End -->
+
+	<!-- JavaScripts placed at the end of the document so the pages load faster -->
+	<script th:src="@{\assets\js\jquery-1.11.1.min.js}"></script>
+
+	<script th:src="@{\assets\js\bootstrap.min.js}"></script>
+
+	<script th:src="@{\assets\js\bootstrap-hover-dropdown.min.js}"></script>
+	<script th:src="@{\assets\js\owl.carousel.min.js}"></script>
+
+	<script th:src="@{\assets\js\echo.min.js}"></script>
+	<script th:src="@{\assets\js\jquery.easing-1.3.min.js}"></script>
+	<script th:src="@{\assets\js\bootstrap-slider.min.js}"></script>
+	<script th:src="@{\assets\js\jquery.rateit.min.js}"></script>
+	<script type="text/javascript" th:src="@{\assets\js\lightbox.min.js}"></script>
+	<script th:src="@{\assets\js\bootstrap-select.min.js}"></script>
+	<script th:src="@{\assets\js\wow.min.js}"></script>
+	<script th:src="@{\assets\js\scripts.js}"></script>
+	<script th:src="@{\assets\js\NTK\User\Cart\soluong_detail.js}"></script>
+	<script th:src="@{\assets\js\NTK\User\home\home.js}"></script>
+	<script th:src="@{\assets\js\NTK\User\ajax\ajaxmuangayDetail.js}"></script>
+
+
+
+</body>
+</html>

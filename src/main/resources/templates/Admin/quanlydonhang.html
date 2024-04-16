@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/Admin/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar" style="position: fixed;top: 0;bottom: 0;">
+          <ul class="nav">
+            <li>
+              <a th:href="@{/Admin/dashboard}">
+                <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a th:href="@{/Admin/client}">
+                <i class="zmdi zmdi-link"></i> Quản lí khách hàng
+              </a>
+            </li>
+            <!-- <li>
+              <a href="quanlidanhmuc.html">
+                <i class="zmdi zmdi-widgets"></i> Quản lí danh mục
+              </a>
+            </li> -->
+            <li>
+              <a th:href="@{/Admin/product}">
+                <i class="zmdi zmdi-calendar"></i> Quản lí sản phẩm
+              </a>
+            </li>
+            <li>
+              <a th:href="@{/Admin/bill}">
+                <i class="zmdi zmdi-info-outline"></i> Quản lý đơn hàng
+              </a>
+            </li>
+            <li>
+              <a th:href="@{/Admin/thongke}">
+                <i class="zmdi zmdi-settings"></i>Thống kê
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-comment-more"></i> Đăng xuất
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="container" style="padding-top: 5%;">
+            <div class="container">
+                <div style="display: flex;justify-content: space-between;">
+                    <div>
+                        <h2>Danh Sách Hóa Đơn
+                        </h2>
+                        <p>Hiển thị thông tin danh sách hóa đơn trong shop KIENDEVQUEN:</p>     
+                    </div> 
+                    <div>
+                        <form action="">
+                            <label for="#" style="padding-right: 10px;">Tìm kiếm hóa đơn: </label>
+                            <input type="text" id="name" placeholder="Tìm kiếm" style="padding-left: 10px;">
+                            <button type="submit" style="padding: 0 5px;">Tìm kiếm</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                      
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Ngày mua</th>
+                      <th>Tổng đơn</th>
+                      <th>Address</th>
+                      <th>Người mua</th>
+                      <th>SĐT nhận hàng</th>
+                      <th>Chi tiết ĐH</th>
+                      <th>Option</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr th:each="billModel : ${listBillModel}">
+                      <td th:text="${billModel.id}">John</td>
+                      <td th:text="${billModel.buyDate}">john@example.com</td>
+                      <td th:utext="${billModel.tongHoaDon}+'VNĐ'">john@example.com</td>
+                      <td th:text="${billModel.address}">john@example.com</td>
+                      <td th:text="${billModel.userEntity.name}">john@example.com</td>
+                      <td th:text="${billModel.userEntity.phone}">john@example.com</td>
+                      <td><a th:href="@{/Admin/detailBill(idBill=${billModel.id})}">Xem Chi Tiết</a></td>
+                      <td>
+                        <a href="#" style="padding-right: 10px;"></a>
+                    </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        
+      </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar" style="position: fixed;top: 0;bottom: 0;">
+          <ul class="nav">
+            <li>
+              <a href="index.html">
+                <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="quanlikhachhang.html">
+                <i class="zmdi zmdi-link"></i> Quản lí khách hàng
+              </a>
+            </li>
+            <!-- <li>
+              <a href="quanlidanhmuc.html">
+                <i class="zmdi zmdi-widgets"></i> Quản lí danh mục
+              </a>
+            </li> -->
+            <li>
+              <a href="quanlisanpham.html">
+                <i class="zmdi zmdi-calendar"></i> Quản lí sản phẩm
+              </a>
+            </li>
+            <li>
+              <a href="quanlydonhang.html">
+                <i class="zmdi zmdi-info-outline"></i> Quản lý đơn hàng
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-settings"></i>Thống kê
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="zmdi zmdi-comment-more"></i> Đăng xuất
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="container" style="padding-top: 5%;">
+            <div class="container">
+                <div style="display: flex;justify-content: space-between;">
+                    <div>
+                        <h2>Danh Sách Đơn Hàng
+                        </h2>
+                        <p>Hiển thị thông tin danh sách đơn hàng trong shop KIENDEVQUEN:</p>     
+                    </div> 
+                    <div>
+                        <form action="">
+                            <label for="#" style="padding-right: 10px;">Tìm kiếm đơn hàng: </label>
+                            <input type="text" id="name" placeholder="Tìm kiếm" style="padding-left: 10px;">
+                            <button type="submit" style="padding: 0 5px;">Tìm kiếm</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                      
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Tên Danh Mục</th>
+                      <th>Option</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>john@example.com</td>
+                      <td>
+                        <a href="#" style="padding-right: 10px;">Sửa</a>
+                        <a href="#">Xóa</a>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>mary@example.com</td>
+                      <td>
+                        <a href="#" style="padding-right: 10px;">Sửa</a>
+                        <a href="#">Xóa</a>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>john@example.com</td>
+                      <td>
+                        <a href="#" style="padding-right: 10px;">Sửa</a>
+                        <a href="#">Xóa</a>
+                    </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        
+      </div>
+</body>
+</html>

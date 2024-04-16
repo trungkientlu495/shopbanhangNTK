@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>'
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+	<div id="thanhtoan" style="width: 80%;height: auto;margin-left: auto;margin-right: auto;">
+		<div class="image" style="width: 100%;height: auto;padding: 10px;">
+			<H1 style="text-align: center;">SHOP NTK</H1>
+		</div>
+		<div class="thanhtoan" style="display: flex;padding: 50px;">
+			<div>
+				<div class="thanhtoan__icon--heading" style="display: flex;">
+					<div style="padding-right: 25px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px">
+							<g fill="none" stroke="#8EC343" stroke-width="2">
+							<circle cx="36" cy="36" r="35" style="stroke-dasharray:240px, 240px; stroke-dashoffset: 480px;"></circle>
+							<path d="M17.417,37.778l9.93,9.909l25.444-25.393" style="stroke-dasharray:50px, 50px; stroke-dashoffset: 0px;"></path>
+							</g>
+							</svg>
+					</div>
+					<div class="thankyou-message-container">
+						<h2 class="section__title" style="font-size: 18.4px;font-weight: normal;">Cảm ơn bạn đã đặt hàng</h2>
+						<p class="section__text" style="margin: 14px 0;font-size: 16px;color: #595959;">
+						Một email xác nhận đã được gửi tới <span th:text="${userModel.email}"></span> <br>
+						<p style="margin: 14px 0;font-size: 16px;color: #595959;">
+						Xin vui lòng kiểm tra email của bạn
+						</p>
+						<p>
+					</div>
+				</div>
+				<div class="thanhtoan__info--khachhang row" style="padding: 14px;margin: 14px;">
+					<div class="col" style="padding: 0 14px;">
+						<h2 style="font-size: 21px;font-weight: normal;">Thông tin mua hàng</h2>
+						<p style="padding: 14px 0;color: #595959" th:text="${userModel.name}"></p>
+						<p style="padding: 14px 0;color: #595959" th:text="${userModel.email}"></p>
+						<p style="padding: 14px 0;color: #595959" th:text="${userModel.phone}"></p>
+					</div>
+					<div class="col" style="padding: 0 14px;">
+						<h2 style="font-size: 21px;font-weight: normal;">Địa chỉ nhận hàng</h2>
+						<p style="padding: 14px 0;color: #595959" th:text="${userModel.name}"></p>
+						<p style="padding: 14px 0;color: #595959" th:text="${userModel.address}"></p>
+						<p style="padding: 14px 0;color: #595959" th:text="${userModel.phone}"></p>
+					</div>
+				</div>
+				<div class="thanhtoan__info--khachhang row" style="padding: 0 10px;margin: 14px;">
+					<div class="col" style="padding: 0 14px;">
+						<h2 style="font-size: 21px;font-weight: normal;">Phương thức thanh toán</h2>
+						<p style="padding: 14px 0;color: #595959">Thanh toán khi nhận hàng</p>
+						
+					</div>
+					<div class="col" style="padding: 0 14px;">
+						<h2 style="font-size: 21px;font-weight: normal;">Phương thức vận chuyển</h2>
+						<p style="padding: 14px 0;color: #595959">Hỏa Tốc</p>
+					</div>
+				</div>
+			</div>
+			<div class="thanhtoan__info--donhang" style="background: #fde7ff;padding-right: 15px;height: auto;">
+				<div class="donhang" style="font-weight: 600;padding: 7px 15px;border-bottom: 1px solid #ccc;">
+					Đơn Hàng <span>#173</span>
+				</div>
+				<div style="padding: 10px 0 15px 15px;">
+					<table class="product-table">
+						<tbody>
+							<tr class="product" th:each = "listProduct,item : ${listProducts}">
+								<td class="product__image" >
+									<div class="product-thumbnail">
+										<div class="product-thumbnail__wrapper">
+											<img th:src="${listProduct.imageUrl}" style="width: 30px">
+										</div>
+										
+									</div>
+								</td>
+								<th class="product__description"  style="padding: 0 0 0 10px;font-size: 12px;text-align: left;font-weight: 500">
+									<span class="product__description__name" th:text="${listProduct.name}">Áo Thun Unisex Yoguu Some Day</span>
+
+								</th>
+								<td class="product__quantity printable-only" th:utext="'x' + ${soluongs[item.index]}" style="padding: 0 0 0 10px;font-size: 12px;text-align: left;font-weight: 500">
+									1
+								</td>
+								<td class="product__price" style="padding: 14px 1px 14px 14px;" th:utext="${tamtinhs[item.index]} + 'VNĐ'">
+									349.000đ
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<div style="padding: 0 15px">
+					<table class="product-table" style="display: block;">
+						<tbody>
+							<tr class="product">
+								<th class="product__image" style="display: inline-block;">
+									Tạm tính
+								</th>
+								<td class="product__price" style="padding: 14px 1px 14px 14px;display: inline-block;" th:utext="${tong} + 'VNĐ'">
+									349.000đ
+								</td>
+							</tr>
+							<tr class="product">
+								<th class="product__image" style="display: inline-block;font-size: 14px;">
+									Phí vận chuyển
+								</th>
+								<td class="product__price" style="padding: 14px 1px 14px 14px;display: inline-block;font-size: 14px;">
+									0VNĐ
+								</td>
+							</tr>
+							<tr class="product">
+								<th class="product__image" style="display: inline-block;font-size: 17px;">
+									Tổng cộng
+								</th>
+								<td class="product__price" style="padding: 14px 1px 14px 14px;display: inline-block;" th:utext="${tong} + 'VNĐ'">
+									349.000đ
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div style="display: flex;justify-content: center;">
+			<div style="padding-right: 20px;">
+				<a th:href="@{/User/home}" class="btn btn--large" style="background-color: #fcaf17;border-color: #fcaf17;font-size: 20px;text-decoration: none;color: #000;padding: 15px 10px;border-radius: 5px;">Tiếp tục mua hàng</a>
+			</div>
+			<div style="cursor: pointer;">
+				<i class="fa-solid fa-print" style="font-size: 20px;"></i>
+				<span style="font-size: 20px">In</span>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+</style>
+</html>

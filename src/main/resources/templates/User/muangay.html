@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="keywords" content="MediaCenter, Template, eCommerce">
+<meta name="robots" content="all">
+
+<title>Flipmart premium HTML5 & CSS3 Template</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" th:href="@{\assets\css\bootstrap.min.css}">
+<!-- Customizable CSS -->
+<link rel="stylesheet" th:href="@{\assets\css\main.css}">
+<link rel="stylesheet" th:href="@{\assets\css\blue.css}">
+<link rel="stylesheet" th:href="@{\assets\css\owl.carousel.css}">
+<link rel="stylesheet" th:href="@{\assets\css\owl.transitions.css}">
+<link rel="stylesheet" th:href="@{\assets\css\animate.min.css}">
+<link rel="stylesheet" th:href="@{\assets\css\rateit.css}">
+<link rel="stylesheet" th:href="@{\assets\css\bootstrap-select.min.css}">
+
+
+
+
+<!-- Icons/Glyphs -->
+
+<!-- Fonts -->
+<link
+	href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700'
+	rel='stylesheet' type='text/css'>
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body class="cnt-home">
+	<!-- ============================================== HEADER ============================================== -->
+	<header class="header-style-1">
+
+		<!-- ============================================== TOP MENU ============================================== -->
+		<div class="top-bar animate-dropdown">
+			<div class="container">
+				<div class="header-top-inner">
+					<div class="cnt-account">
+						<ul class="list-unstyled">
+							<li><a th:href="@{/User/account}"><i
+									class="icon fa fa-user"></i>Tài khoản của tôi</a></li>
+							<li><a th:href="@{/User/wishlist}"><i
+									class="icon fa fa-heart"></i>Danh sách yêu thích</a></li>
+							<li><a th:href="@{/User/cart}"><i
+									class="icon fa fa-shopping-cart"></i>Giỏ hàng của tôi</a></li>
+							<li><a href="@{/User/historyOrder}"><i class="icon fa fa-check"></i>Lịch sử mua hàng</a></li>
+							<li><a href="#" th:text="${name}"><i
+									class="icon fa fa-lock"></i>Đăng nhập</a></li>
+						</ul>
+					</div>
+					<!-- /.cnt-account -->
+
+					<div class="cnt-block">
+						<ul class="list-unstyled list-inline">
+							<li class="dropdown dropdown-small"><a href="#"
+								class="dropdown-toggle" data-hover="dropdown"
+								data-toggle="dropdown"><span class="value">VNĐ </span><b
+									class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">VNĐ</a></li>
+									<li><a href="#">USD</a></li>
+								</ul></li>
+
+							<li class="dropdown dropdown-small"><a href="#"
+								class="dropdown-toggle" data-hover="dropdown"
+								data-toggle="dropdown"><span class="value">Vietnamese
+								</span><b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Vietnamese</a></li>
+									<li><a href="#">English</a></li>
+								</ul></li>
+						</ul>
+						<!-- /.list-unstyled -->
+					</div>
+					<!-- /.cnt-cart -->
+					<div class="clearfix"></div>
+				</div>
+				<!-- /.header-top-inner -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.header-top -->
+		<!-- ============================================== TOP MENU : END ============================================== -->
+		<div class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+						<!-- ============================================================= LOGO ============================================================= -->
+						<div class="logo">
+							<a href="home.html"> <img th:src="@{\assets\images\logo.png}"
+								alt="">
+
+							</a>
+						</div>
+						<!-- /.logo -->
+						<!-- ============================================================= LOGO : END ============================================================= -->
+					</div>
+					<!-- /.logo-holder -->
+
+					<div class="col-xs-12 col-sm-12 col-md-7 top-search-holder">
+						<!-- /.contact-row -->
+						<!-- ============================================================= SEARCH AREA ============================================================= -->
+						<div class="search-area">
+							<form method="get" th:action="@{/Anonymous/search_product}">
+								<div class="control-group">
+
+									<ul class="categories-filter animate-dropdown">
+										<li class="dropdown"><a class="dropdown-toggle"
+											data-toggle="dropdown" href="category.html">Tìm kiếm</a>
+											<style>
+input:focus {
+	outline: none;
+}
+</style></li>
+									</ul>
+
+									<input class="search-field"
+										placeholder="Nhập sản phẩm cần tìm..." name="search">
+
+									<button class="search-button" type="submit"></button>
+
+								</div>
+							</form>
+						</div>
+						<!-- /.search-area -->
+						<!-- ============================================================= SEARCH AREA : END ============================================================= -->
+					</div>
+					<!-- /.top-search-holder -->
+
+					<div
+						class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">
+						<!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+
+						<div class="dropdown dropdown-cart">
+							<a href="#" class="dropdown-toggle lnk-cart"
+								data-toggle="dropdown">
+								<div class="items-cart-inner">
+									<div class="basket">
+										<i class="glyphicon glyphicon-shopping-cart"></i>
+									</div>
+									<div class="basket-item-count">
+										<span class="count">2</span>
+									</div>
+									<div class="total-price-basket">
+										<span class="lbl">cart -</span> <span class="total-price">
+											<span class="sign">$</span><span class="value">600.00</span>
+										</span>
+									</div>
+
+
+								</div>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<div class="cart-item product-summary">
+										<div class="row">
+											<div class="col-xs-4">
+												<div class="image">
+													<a href="detail.html"><img
+														th:src="@{\assets\images\cart.jpg}" alt=""></a>
+												</div>
+											</div>
+											<div class="col-xs-7">
+
+												<h3 class="name">
+													<a href="index.php?page-detail">Simple Product</a>
+												</h3>
+												<div class="price">$600.00</div>
+											</div>
+											<div class="col-xs-1 action">
+												<a href="#"><i class="fa fa-trash"></i></a>
+											</div>
+										</div>
+									</div> <!-- /.cart-item -->
+									<div class="clearfix"></div>
+									<hr>
+
+									<div class="clearfix cart-total">
+										<div class="pull-right">
+
+											<span class="text">Sub Total :</span><span class='price'>$600.00</span>
+
+										</div>
+										<div class="clearfix"></div>
+
+										<a href="checkout.html"
+											class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a>
+									</div> <!-- /.cart-total-->
+
+
+								</li>
+							</ul>
+							<!-- /.dropdown-menu-->
+						</div>
+						<!-- /.dropdown-cart -->
+
+						<!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
+					</div>
+					<!-- /.top-cart-row -->
+				</div>
+				<!-- /.row -->
+
+			</div>
+			<!-- /.container -->
+
+		</div>
+		<!-- /.main-header -->
+
+		<!-- ============================================== NAVBAR ============================================== -->
+		<div class="header-nav animate-dropdown">
+			<div class="container">
+				<div class="yamm navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button data-target="#mc-horizontal-menu-collapse"
+							data-toggle="collapse" class="navbar-toggle collapsed"
+							type="button">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="nav-bg-class">
+						<div class="navbar-collapse collapse"
+							id="mc-horizontal-menu-collapse">
+							<div class="nav-outer">
+								<ul class="nav navbar-nav">
+									<li class="active dropdown yamm-fw"><a
+										th:href="@{/User/home}" data-hover="dropdown"
+										class="dropdown-toggle">Trang chủ</a></li>
+									<li class="dropdown yamm mega-menu"><a href="home.html"
+										data-hover="dropdown" class="dropdown-toggle"
+										data-toggle="dropdown">Quần áo</a></li>
+
+									<li class="dropdown mega-menu"><a href="category.html"
+										data-hover="dropdown" class="dropdown-toggle"
+										data-toggle="dropdown">Thiết bị điện tử <span
+											class="menu-label hot-menu hidden-xs">hot</span>
+									</a></li>
+									<li class="dropdown hidden-sm"><a href="category.html">Sức
+											khỏe & Làm đẹp <span class="menu-label new-menu hidden-xs">new</span>
+									</a></li>
+
+									<li class="dropdown hidden-sm"><a href="category.html">Đồng
+											hồ</a></li>
+
+									<li class="dropdown"><a href="contact.html">Trang sức</a>
+									</li>
+
+									<li class="dropdown"><a href="contact.html">Giày</a></li>
+									<li class="dropdown"><a href="contact.html">Trẻ em và
+											Phụ nữ</a></li>
+
+									<li class="dropdown"><a href="#" class="dropdown-toggle"
+										data-hover="dropdown" data-toggle="dropdown">Trang</a>
+										<ul class="dropdown-menu pages">
+											<li>
+												<div class="yamm-content">
+													<div class="row">
+
+														<div class="col-xs-12 col-menu">
+															<ul class="links">
+																<li><a>Trang chủ</a></li>
+																<li><a href="category.html">Sản Phẩm</a></li>
+																<li><a href="detail.html">Chi tiết</a></li>
+																<li><a href="shopping-cart.html">Tóm tắt giỏ
+																		hàng</a></li>
+																<li><a href="checkout.html">Thủ tục thanh toán</a></li>
+																<li><a href="blog.html">Blog</a></li>
+																<li><a href="blog-details.html">Chi tiết Blog</a></li>
+																<li><a href="contact.html">Thông tin liên hệ</a></li>
+																<li><a href="sign-in.html">Đăng nhập</a></li>
+																<li><a href="my-wishlist.html">Danh sách yêu
+																		thích</a></li>
+																<li><a href="terms-conditions.html">Điều khoản
+																		và điều kiện</a></li>
+																<li><a href="track-orders.html">Theo dõi đơn
+																		hàng</a></li>
+																<li><a href="product-comparison.html">Sự so
+																		sánh sản phẩm</a></li>
+																<li><a href="faq.html">Câu hỏi thường gặp</a></li>
+																<li><a href="404.html">404</a></li>
+															</ul>
+														</div>
+
+
+
+													</div>
+												</div>
+											</li>
+
+
+
+										</ul></li>
+									<li class="dropdown  navbar-right special-menu"><a
+										href="#">Todays offer</a></li>
+
+
+								</ul>
+								<!-- /.navbar-nav -->
+								<div class="clearfix"></div>
+							</div>
+							<!-- /.nav-outer -->
+						</div>
+						<!-- /.navbar-collapse -->
+
+
+					</div>
+					<!-- /.nav-bg-class -->
+				</div>
+				<!-- /.navbar-default -->
+			</div>
+			<!-- /.container-class -->
+
+		</div>
+		<!-- /.header-nav -->
+		<!-- ============================================== NAVBAR : END ============================================== -->
+
+	</header>
+
+	<!-- ============================================== HEADER : END ============================================== -->
+	<div class="breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-inner">
+				<ul class="list-inline list-unstyled">
+					<li><a href="#">Home</a></li>
+					<li class='active'>Checkout</li>
+				</ul>
+			</div>
+			<!-- /.breadcrumb-inner -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.breadcrumb -->
+
+	<div class="body-content">
+		<div class="container">
+			<div class="checkout-box ">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel-group checkout-steps" id="accordion">
+							<!-- checkout-step-01  -->
+							<div class="panel panel-default checkout-step-01">
+
+								<!-- panel-heading -->
+								<div class="panel-heading">
+									<h4 class="unicase-checkout-title">
+										<a class="" data-parent="#accordion" href="#collapseOne"
+											style="font-size: 20px; text-align: center"> Phương Thức
+											Thanh Toán </a>
+									</h4>
+								</div>
+								<!-- panel-heading -->
+
+								<div id="collapseOne" class="panel-collapse collapse in">
+
+									<!-- panel-body  -->
+									<div class="panel-body">
+										<div class="row">
+
+											<!-- guest-login -->
+											<div class="col-md-6 col-sm-6 guest-login">
+												<h4 class="checkout-subtitle"
+													style="font-size: 15px; font-weight: 700">Thông tin
+													nhận hàng</h4>
+												<!-- radio-form  -->
+												<form action="/action_page.php">
+													<div class="mb-3 mt-3">
+														<input type="text" class="form-control" id="name"
+															th:value="${userModel.name}" name="name"
+															style="margin: 20px 0">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" id="phone"
+															th:value="${userModel.phone}" placeholder="Số điện thoại"
+															name="pswd" style="margin: 20px 0">
+													</div>
+													<div class="mb-3">
+														<input type="email" class="form-control" id="email"
+															th:value="${userModel.email}" name="email"
+															style="margin: 20px 0">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" id="address"
+															th:value="${userModel.address}" name="address"
+															style="margin: 20px 0">
+													</div>
+												</form>
+												<!-- radio-form  -->
+
+
+
+											</div>
+											<!-- guest-login -->
+
+											<!-- already-registered-login -->
+											<div class="col-md-6 col-sm-6 already-registered-login">
+												<h4 class="checkout-subtitle"
+													style="font-size: 15px; font-weight: 700">Đơn hàng của
+													bạn</h4>
+												<table class="table table-hover">
+													<thead>
+														<tr>
+															<th style="font-size: 14px">Sản phẩm</th>
+															<th style="font-size: 14px">Tạm tính</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td style="font-size: 12px;font-weight: 600"><span th:text="${productModel.name}"></span> <strong
+															th:utext=" 'x' + ${soluong}"
+																></strong>
+															</td>
+															<td th:utext="${productModel.price}*${soluong} + 'VNĐ'"
+																
+																class="giasanpham" style="font-size: 12px;font-weight: 600">Doe</td>
+														</tr>
+														<tr>
+															<td style="font-size: 12px;font-weight: 600">Tạm tính</td>
+															<td id="tamtinh" style="font-size: 12px;font-weight: 600">Moe</td>
+														</tr>
+														<tr>
+															<td style="font-size: 12px;font-weight: 600">Tổng</td>
+															<td id="tong" style="font-size: 12px;font-weight: 600">Dooley</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- already-registered-login -->
+											<a th:href="@{/submitOrder}" onclick="sendEmailUser();"
+												style="width: 100%; padding: 10px 0; background-color: #000; color: #fff; position: fixed; left: 0; right: 0; bottom: 0; font-size: 15px; z-index: 500;text-align: center;cursor: pointer;">ĐẶT HÀNG NGAY</a>
+										</div>
+									</div>
+									<!-- panel-body  -->
+
+								</div>
+								<!-- row -->
+							</div>
+							<!-- checkout-step-01  -->
+							<!-- checkout-step-02  -->
+							<div class="panel panel-default checkout-step-02">
+								<div class="panel-heading">
+									<h4 class="unicase-checkout-title">
+										<a data-toggle="collapse" class="collapsed"
+											href="#collapseTwo" style="font-size: 14px"> <i
+											class="fa-solid fa-building-columns"
+											style="padding-right: 5px"></i> Chuyển khoản ngân hàng
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p style="line-height: 1.5; font-weight: 400; font-size: 14px">Khóa
+											học sẽ được kích hoạt sau khi HSK Mock kiểm tra tài khoản và
+											xác nhận việc thanh toán của bạn thành công.</p>
+										<p style="line-height: 1.5; font-weight: 400; font-size: 14px">
+											<span style="font-weight: 700; font-size: 16px">Chuyển
+												khoản ngân hàng: </span>Bạn sử dụng Internet Banking hoặc có thể
+											đến bất kỳ ngân hàng nào ở Việt Nam để chuyển tiền theo thông
+											tin bên dưới:
+										</p>
+										<div class="d_flex"
+											style="display: flex; justify-content: space-between;">
+											<div class="_text">
+												<p style="font-size: 14px">
+													<span>Chủ tài khoản: </span>Nguyễn Trung Kiên
+												</p>
+												<p style="font-size: 14px">
+													<span>Số tài khoản: </span>0987580175
+												</p>
+												<p style="font-size: 14px">
+													<span>Ngân hàng: </span>MBbank
+												</p>
+												<p style="font-size: 14px">
+													<span>Nội dung chuyển khoản: </span>Don hang [Mã đơn hàng]
+												</p>
+											</div>
+											<div class="_img">
+												<img alt="qr"
+													src="https://img.vietqr.io/image/SHB-6666882828-qr_only.png"
+													style="width: 200px; height: auto">
+											</div>
+										</div>
+										<button>Thanh Toán Qua Ngân Hàng</button>
+									</div>
+								</div>
+							</div>
+							<!-- checkout-step-02  -->
+
+							<!-- checkout-step-03  -->
+							<div class="panel panel-default checkout-step-03">
+								<div class="panel-heading">
+									<h4 class="unicase-checkout-title">
+										<a data-toggle="collapse" class="collapsed"
+											href="#collapseThree" style="font-size: 14px"> <i
+											class="fa-solid fa-money-bills" style="padding-right: 5px"></i>
+											Thanh Toán Khi Nhận Hàng
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="panel-body" style="font-size: 14px">Khi Nhận Được Sản Phẩm Người Dùng Mới Phải Thanh Toán Tiền.</div>
+								</div>
+							</div>
+							<!-- checkout-step-03  -->
+
+
+							<!-- checkout-step-05  -->
+							<div class="panel panel-default checkout-step-05">
+								<div class="panel-heading">
+									<h4 class="unicase-checkout-title">
+										<a data-toggle="collapse" class="collapsed"
+											href="#collapseFive" style="font-size: 14px"> <i
+											class="fa-brands fa-cc-amazon-pay"
+											style="padding-right: 5px; font-size: 14px"></i> Thanh toán
+											qua VNPAY
+										</a>
+									</h4>
+								</div>
+								<div id="collapseFive" class="panel-collapse collapse">
+									<div class="panel-body" style="font-size: 14px">
+										<a href="#">Hướng dẫn thanh toán qua VNPAY</a>.
+									</div>
+								</div>
+							</div>
+							<!-- checkout-step-05  -->
+
+						</div>
+						<!-- /.checkout-steps -->
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.checkout-box -->
+			<!-- ============================================== BRANDS CAROUSEL ============================================== -->
+
+			<!-- /.logo-slider -->
+			<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.body-content -->
+	<!-- ============================================================= FOOTER ============================================================= -->
+	<!-- ============================================================= FOOTER ============================================================= -->
+	<footer id="footer" class="footer color-bg">
+
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">Liên Hệ Chúng Tôi</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class="toggle-footer">
+								<li class="media">
+									<div class="pull-left">
+										<span class="icon fa-stack fa-lg"> <i
+											class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
+									<div class="media-body">
+										<p>ThemesGround, 789 Mainrd, Anytown, CA 12345 Hoa Kỳ</p>
+									</div>
+								</li>
+								<li class="media">
+									<div class="pull-left">
+										<span class="icon fa-stack fa-lg"> <i
+											class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
+									<div class="media-body">
+										<p>
+											+(84) 987580175<br> +(888) 456-7890
+										</p>
+									</div>
+								</li>
+								<li class="media">
+									<div class="pull-left">
+										<span class="icon fa-stack fa-lg"> <i
+											class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+										</span>
+									</div>
+									<div class="media-body">
+										<span><a href="#">nguyentrungk495@gmail.com</a></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">Dịch Vụ Khách Hàng</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class='list-unstyled'>
+								<li class="first"><a href="#" title="Contact us">Tài
+										Khoản Của Tôi</a></li>
+								<li><a href="#" title="About us">Lịch sử đơn hàng</a></li>
+								<li><a href="#" title="faq">Câu hỏi thường gặp</a></li>
+								<li><a href="#" title="Popular Searches">Khuyến mãi</a></li>
+								<li class="last"><a href="#" title="Where is my order?">Trung
+										tâm trợ giúp</a></li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">Tập Đoàn</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class='list-unstyled'>
+								<li class="first"><a title="Your Account" href="#">Về
+										chúng tôi</a></li>
+								<li><a title="Information" href="#">Dịch vụ khách hàng</a></li>
+								<li><a title="Addresses" href="#">Công ty</a></li>
+								<li><a title="Addresses" href="#">Quan hệ đầu tư</a></li>
+								<li class="last"><a title="Orders History" href="#">Tìm
+										kiếm nâng cao</a></li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="module-heading">
+							<h4 class="module-title">Tại Sao Chọn Chúng Tôi</h4>
+						</div>
+						<!-- /.module-heading -->
+
+						<div class="module-body">
+							<ul class='list-unstyled'>
+								<li class="first"><a href="#" title="About us">Hướng
+										dẫn mua sắm</a></li>
+								<li><a href="#" title="Blog">Blog</a></li>
+								<li><a href="#" title="Company">Công ty</a></li>
+								<li><a href="#" title="Investor Relations">Quan hệ đầu
+										tư</a></li>
+								<li class=" last"><a href="contact-us.html"
+									title="Suppliers">Liên hệ chúng tôi</a></li>
+							</ul>
+						</div>
+						<!-- /.module-body -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+tbody>tr>td {
+	padding: 15px !important;
+}
+</style>
+		<script>
+			var tamtinh = document.getElementsByClassName("giasanpham").length;
+			var tong = 0;
+			for (var i = 0; i < tamtinh; i++) {
+				var tamtinha = parseFloat(document
+						.getElementsByClassName("giasanpham")[i].textContent
+						.replace(/\./g, ""));
+				tong = tong + tamtinha;
+			}
+			console.log(tong);
+			document.getElementById("tamtinh").innerHTML = tong
+					.toLocaleString()
+					+ 'VNĐ';
+			document.getElementById("tong").innerHTML = tong
+			.toLocaleString()
+			+ 'VNĐ';
+		</script>
+	</footer>
+	<!-- ============================================================= FOOTER : END============================================================= -->
+
+
+	<!-- For demo purposes – can be removed on production -->
+
+
+	<!-- For demo purposes – can be removed on production : End -->
+
+	<!-- JavaScripts placed at the end of the document so the pages load faster -->
+	<script th:src="@{\assets\js\jquery-1.11.1.min.js}"></script>
+
+	<script th:src="@{\assets\js\bootstrap.min.js}"></script>
+
+	<script th:src="@{\assets\js\bootstrap-hover-dropdown.min.js}"></script>
+	<script th:src="@{\assets\js\owl.carousel.min.js}"></script>
+
+	<script th:src="@{\assets\js\echo.min.js}"></script>
+	<script th:src="@{\assets\js\jquery.easing-1.3.min.js}"></script>
+	<script th:src="@{\assets\js\bootstrap-slider.min.js}"></script>
+	<script th:src="@{\assets\js\jquery.rateit.min.js}"></script>
+	<script type="text/javascript" th:src="@{\assets\js\lightbox.min.js}"></script>
+	<script th:src="@{\assets\js\bootstrap-select.min.js}"></script>
+	<script th:src="@{\assets\js\wow.min.js}"></script>
+	<script th:src="@{\assets\js\scripts.js}"></script>
+
+
+
+
+</body>
+</html>

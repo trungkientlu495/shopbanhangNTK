@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.sidebar i {
+	padding-right: 12px;
+}
+
+.sidebar h3 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.slidebar h5 {
+	font-weight: 500;
+}
+
+.noiban {
+	margin: 20px 0 0;
+}
+
+.filter-address label {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.filter-address label:hover {
+	cursor: pointer;
+}
+
+.xoatatca {
+    background-color: #fff;
+    color: #000;
+    border: none !important;
+}
+
+.xoatatca:hover {
+    opacity: 0.8;
+}

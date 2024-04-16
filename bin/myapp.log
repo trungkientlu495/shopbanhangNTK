@@ -1,0 +1,1064 @@
+2024-04-01T01:40:46.822+07:00  INFO 19000 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 19000 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T01:40:46.835+07:00  INFO 19000 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T01:40:47.012+07:00  INFO 19000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-01T01:40:47.012+07:00  INFO 19000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-01T01:40:48.272+07:00  INFO 19000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T01:40:48.428+07:00  INFO 19000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 5 JPA repository interfaces.
+2024-04-01T01:40:49.644+07:00  INFO 19000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T01:40:49.664+07:00  INFO 19000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T01:40:49.664+07:00  INFO 19000 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T01:40:49.739+07:00  INFO 19000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-01T01:40:49.740+07:00  INFO 19000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2727 ms
+2024-04-01T01:40:49.931+07:00  INFO 19000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-01T01:40:49.943+07:00  WARN 19000 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T01:40:50.158+07:00  INFO 19000 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ce78216
+2024-04-01T01:40:50.163+07:00  INFO 19000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-01T01:40:50.282+07:00  INFO 19000 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T01:40:50.441+07:00  INFO 19000 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-01T01:40:50.504+07:00  INFO 19000 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T01:40:50.876+07:00  INFO 19000 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T01:40:50.944+07:00  WARN 19000 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T01:40:50.946+07:00  WARN 19000 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T01:40:52.243+07:00  INFO 19000 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T01:40:52.442+07:00  INFO 19000 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T01:40:52.872+07:00  INFO 19000 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-01T01:40:53.973+07:00  WARN 19000 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T01:40:54.522+07:00  INFO 19000 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T01:40:54.540+07:00  INFO 19000 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T01:40:54.540+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T01:40:54.542+07:00  INFO 19000 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T01:40:54.543+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T01:40:54.544+07:00  INFO 19000 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T01:40:54.545+07:00  INFO 19000 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T01:40:54.554+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@413b8b95
+2024-04-01T01:40:54.695+07:00  INFO 19000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T01:40:54.742+07:00  INFO 19000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T01:40:54.746+07:00  INFO 19000 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T01:40:54.747+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T01:40:54.762+07:00  INFO 19000 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 8.483 seconds (process running for 9.076)
+2024-04-01T01:41:00.238+07:00  INFO 19000 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T01:41:00.238+07:00  INFO 19000 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T01:41:00.241+07:00  INFO 19000 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-01T01:41:16.927+07:00 ERROR 19000 --- [http-nio-5555-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-5555-exec-6] Exception processing template "dashboard.html": Error resolving template [dashboard.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [dashboard.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-04-01T01:41:16.940+07:00 ERROR 19000 --- [http-nio-5555-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [dashboard.html], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [dashboard.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-04-01T01:41:39.080+07:00  INFO 19000 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T01:41:39.084+07:00  INFO 19000 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T01:41:39.216+07:00  INFO 19000 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T01:41:39.216+07:00  INFO 19000 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T01:41:39.216+07:00  INFO 19000 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T01:41:39.216+07:00  INFO 19000 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T01:41:39.217+07:00  INFO 19000 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T01:41:39.233+07:00  INFO 19000 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-01T01:41:39.252+07:00  INFO 19000 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-01T01:41:39.486+07:00  INFO 19000 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 19000 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T01:41:39.488+07:00  INFO 19000 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T01:41:40.269+07:00  INFO 19000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T01:41:40.300+07:00  INFO 19000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 5 JPA repository interfaces.
+2024-04-01T01:41:40.533+07:00  INFO 19000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T01:41:40.534+07:00  INFO 19000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T01:41:40.534+07:00  INFO 19000 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T01:41:40.570+07:00  INFO 19000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-01T01:41:40.570+07:00  INFO 19000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
+2024-04-01T01:41:40.614+07:00  INFO 19000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-01T01:41:40.614+07:00  WARN 19000 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T01:41:40.620+07:00  INFO 19000 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d6cbeb0
+2024-04-01T01:41:40.621+07:00  INFO 19000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-01T01:41:40.623+07:00  INFO 19000 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T01:41:40.628+07:00  INFO 19000 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T01:41:40.633+07:00  INFO 19000 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T01:41:40.636+07:00  WARN 19000 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T01:41:40.636+07:00  WARN 19000 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T01:41:40.765+07:00  INFO 19000 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T01:41:40.916+07:00  INFO 19000 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T01:41:41.184+07:00  WARN 19000 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T01:41:41.298+07:00  INFO 19000 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T01:41:41.299+07:00  INFO 19000 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T01:41:41.299+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T01:41:41.300+07:00  INFO 19000 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T01:41:41.300+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T01:41:41.300+07:00  INFO 19000 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T01:41:41.300+07:00  INFO 19000 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T01:41:41.300+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4cdc8187
+2024-04-01T01:41:41.313+07:00  INFO 19000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T01:41:41.326+07:00  INFO 19000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T01:41:41.326+07:00  INFO 19000 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T01:41:41.327+07:00  INFO 19000 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T01:41:41.346+07:00  INFO 19000 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.97 seconds (process running for 55.661)
+2024-04-01T01:41:41.349+07:00  INFO 19000 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T01:41:41.532+07:00  INFO 19000 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T01:41:41.533+07:00  INFO 19000 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T01:41:41.535+07:00  INFO 19000 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-01T15:00:43.828+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:00:43.831+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:00:43.905+07:00  INFO 2528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-01T15:00:43.905+07:00  INFO 2528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-01T15:00:45.170+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:00:45.293+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:00:46.409+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:00:46.452+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:00:46.454+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:00:46.564+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:00:46.565+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2659 ms
+2024-04-01T15:00:46.915+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-01T15:00:46.953+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:00:47.345+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58e1a11f
+2024-04-01T15:00:47.349+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-01T15:00:47.442+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:00:47.558+07:00  INFO 2528 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-01T15:00:47.620+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:00:47.976+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:00:48.053+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:00:48.054+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:00:49.402+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:00:49.602+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:00:50.014+07:00  INFO 2528 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-01T15:00:51.086+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:00:51.641+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:00:51.659+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:00:51.659+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:00:51.660+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:00:51.661+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:00:51.662+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:00:51.662+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:00:51.670+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@19f57cb
+2024-04-01T15:00:51.849+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:00:51.897+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:00:51.900+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:00:51.900+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:00:51.917+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 8.641 seconds (process running for 9.305)
+2024-04-01T15:01:25.636+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T15:01:25.636+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T15:01:25.641+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-01T15:01:46.008+07:00  INFO 2528 --- [http-nio-5555-exec-10] n.t.project1.controller.UserController   : So luong: 4
+2024-04-01T15:02:24.780+07:00  INFO 2528 --- [http-nio-5555-exec-6] n.t.project1.controller.UserController   : So luong: 4
+2024-04-01T15:03:07.228+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:03:07.240+07:00  INFO 2528 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:03:07.272+07:00  INFO 2528 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:03:07.273+07:00  INFO 2528 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:03:07.273+07:00  INFO 2528 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:03:07.273+07:00  INFO 2528 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:03:07.274+07:00  INFO 2528 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:03:07.278+07:00  INFO 2528 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-01T15:03:07.288+07:00  INFO 2528 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-01T15:03:07.531+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:03:07.536+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:03:08.027+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:03:08.054+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:03:08.215+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:03:08.216+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:03:08.217+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:03:08.250+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:03:08.251+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 688 ms
+2024-04-01T15:03:08.314+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-01T15:03:08.314+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:03:08.334+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7175d18e
+2024-04-01T15:03:08.335+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-01T15:03:08.339+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:03:08.360+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:03:08.367+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:03:08.375+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:03:08.375+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:03:08.690+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:03:08.810+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:03:09.107+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:03:09.266+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:03:09.267+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:03:09.267+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:03:09.267+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:03:09.267+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:03:09.267+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:03:09.272+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:03:09.272+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5c971384
+2024-04-01T15:03:09.293+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:03:09.307+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:03:09.307+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:03:09.307+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:03:09.311+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.901 seconds (process running for 146.699)
+2024-04-01T15:03:09.315+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:03:09.391+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T15:03:09.392+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T15:03:09.393+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-01T15:03:10.869+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-04-01T15:03:10.873+07:00  INFO 2528 --- [Thread-7] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:03:10.913+07:00  INFO 2528 --- [Thread-7] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:03:10.913+07:00  INFO 2528 --- [Thread-7] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:03:10.913+07:00  INFO 2528 --- [Thread-7] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:03:10.913+07:00  INFO 2528 --- [Thread-7] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:03:10.915+07:00  INFO 2528 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:03:10.916+07:00  INFO 2528 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-04-01T15:03:10.919+07:00  INFO 2528 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-04-01T15:03:11.026+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:03:11.026+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:03:11.247+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:03:11.271+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:03:11.383+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:03:11.384+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:03:11.384+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:03:11.408+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:03:11.408+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2024-04-01T15:03:11.444+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-04-01T15:03:11.445+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:03:11.449+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a8eade4
+2024-04-01T15:03:11.449+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-04-01T15:03:11.451+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:03:11.455+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:03:11.459+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:03:11.461+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:03:11.461+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:03:11.634+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:03:11.713+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:03:11.891+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:03:11.973+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:03:11.976+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@693e5187
+2024-04-01T15:03:11.988+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:03:11.996+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:03:11.997+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:03:11.997+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:03:12.001+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.002 seconds (process running for 149.389)
+2024-04-01T15:03:12.003+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:03:31.852+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T15:03:31.853+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T15:03:31.857+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-01T15:04:49.223+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:04:49.227+07:00  INFO 2528 --- [Thread-11] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:04:49.264+07:00  INFO 2528 --- [Thread-11] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:04:49.265+07:00  INFO 2528 --- [Thread-11] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:04:49.265+07:00  INFO 2528 --- [Thread-11] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:04:49.266+07:00  INFO 2528 --- [Thread-11] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:04:49.267+07:00  INFO 2528 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:04:49.268+07:00  INFO 2528 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-04-01T15:04:49.274+07:00  INFO 2528 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-04-01T15:04:49.375+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:04:49.375+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:04:49.610+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:04:49.634+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:04:49.749+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:04:49.750+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:04:49.750+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:04:49.774+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:04:49.775+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 397 ms
+2024-04-01T15:04:49.810+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-04-01T15:04:49.810+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:04:49.815+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22e40011
+2024-04-01T15:04:49.815+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-04-01T15:04:49.817+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:04:49.822+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:04:49.830+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:04:49.834+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:04:49.834+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:04:50.143+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:04:50.259+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:04:50.267+07:00  WARN 2528 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController' defined in file [C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes\ntk\tlu\project1\controller\AdminController.class]: Failed to instantiate [ntk.tlu.project1.controller.AdminController]: Constructor threw exception
+2024-04-01T15:04:50.268+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:04:50.268+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-04-01T15:04:50.272+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-04-01T15:04:50.273+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-01T15:04:50.280+07:00  INFO 2528 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-01T15:04:50.305+07:00 ERROR 2528 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController' defined in file [C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes\ntk\tlu\project1\controller\AdminController.class]: Failed to instantiate [ntk.tlu.project1.controller.AdminController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.2.jar:3.2.2]
+	at ntk.tlu.project1.Project1Application.main(Project1Application.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.2.jar:3.2.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ntk.tlu.project1.controller.AdminController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-6.1.3.jar:6.1.3]
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete MethodHeaderName
+	Syntax error, insert ")" to complete MethodDeclaration
+	Syntax error, insert ";" to complete MethodDeclaration
+
+	at ntk.tlu.project1.controller.AdminController.<init>(AdminController.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.1.3.jar:6.1.3]
+	... 22 common frames omitted
+
+2024-04-01T15:05:17.411+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:05:17.411+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:05:17.683+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:05:17.771+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:05:17.900+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:05:17.903+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:05:17.903+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:05:17.927+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:05:17.927+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 513 ms
+2024-04-01T15:05:17.957+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-04-01T15:05:17.958+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:05:17.963+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18631938
+2024-04-01T15:05:17.965+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-04-01T15:05:17.966+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:05:17.972+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:05:17.978+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:05:17.980+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:05:17.981+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:05:18.084+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:05:18.193+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:05:18.371+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:05:18.546+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:05:18.549+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b64667e
+2024-04-01T15:05:18.564+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:05:18.572+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:05:18.574+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:05:18.575+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:05:18.580+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.214 seconds (process running for 275.968)
+2024-04-01T15:05:18.583+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:05:42.118+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T15:05:42.118+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T15:05:42.120+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-01T15:31:53.387+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:31:53.410+07:00  INFO 2528 --- [Thread-15] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:31:53.454+07:00  INFO 2528 --- [Thread-15] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:31:53.458+07:00  INFO 2528 --- [Thread-15] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:31:53.462+07:00  INFO 2528 --- [Thread-15] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:31:53.466+07:00  INFO 2528 --- [Thread-15] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:31:53.473+07:00  INFO 2528 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:31:53.483+07:00  INFO 2528 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-04-01T15:31:53.498+07:00  INFO 2528 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-04-01T15:31:53.979+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:31:53.982+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:31:54.455+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:31:54.491+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:31:54.775+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:31:54.779+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:31:54.783+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:31:54.826+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:31:54.827+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
+2024-04-01T15:31:54.892+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-04-01T15:31:54.893+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:31:54.901+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70dc4bd3
+2024-04-01T15:31:54.901+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-04-01T15:31:54.904+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:31:54.910+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:31:54.918+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:31:54.921+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:31:54.922+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:31:55.273+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:31:55.568+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:31:55.952+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:31:56.336+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:31:56.359+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:31:56.359+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:31:56.360+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:31:56.361+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:31:56.361+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:31:56.361+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:31:56.361+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@11b40d21
+2024-04-01T15:31:56.417+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:31:56.536+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:31:56.539+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:31:56.539+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:31:56.601+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 2.915 seconds (process running for 1873.989)
+2024-04-01T15:31:56.603+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:32:19.904+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:32:19.912+07:00  INFO 2528 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:32:19.939+07:00  INFO 2528 --- [Thread-22] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:32:19.939+07:00  INFO 2528 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:32:19.939+07:00  INFO 2528 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:32:19.939+07:00  INFO 2528 --- [Thread-22] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:32:19.940+07:00  INFO 2528 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:32:19.941+07:00  INFO 2528 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-04-01T15:32:19.946+07:00  INFO 2528 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-04-01T15:32:20.053+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:32:20.054+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:32:20.280+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:32:20.302+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:32:20.427+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:32:20.430+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:32:20.431+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:32:20.462+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:32:20.462+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 405 ms
+2024-04-01T15:32:20.501+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-04-01T15:32:20.502+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:32:20.507+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75a59c62
+2024-04-01T15:32:20.507+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-04-01T15:32:20.510+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:32:20.514+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:32:20.521+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:32:20.523+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:32:20.523+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:32:20.763+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:32:21.167+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:32:21.387+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:32:21.648+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:32:21.650+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:32:21.651+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:32:21.651+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:32:21.651+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:32:21.651+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:32:21.651+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:32:21.652+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@48a2641d
+2024-04-01T15:32:21.667+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:32:21.675+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:32:21.679+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:32:21.682+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:32:21.686+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.673 seconds (process running for 1899.074)
+2024-04-01T15:32:21.689+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:32:27.489+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:32:27.490+07:00  INFO 2528 --- [Thread-26] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:32:27.517+07:00  INFO 2528 --- [Thread-26] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:32:27.517+07:00  INFO 2528 --- [Thread-26] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:32:27.517+07:00  INFO 2528 --- [Thread-26] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:32:27.517+07:00  INFO 2528 --- [Thread-26] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:32:27.518+07:00  INFO 2528 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:32:27.519+07:00  INFO 2528 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-04-01T15:32:27.522+07:00  INFO 2528 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-04-01T15:32:27.633+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:32:27.634+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:32:27.828+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:32:27.849+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:32:27.939+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:32:27.940+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:32:27.941+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:32:27.969+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:32:27.970+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 333 ms
+2024-04-01T15:32:28.028+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-04-01T15:32:28.029+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:32:28.038+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a098bac
+2024-04-01T15:32:28.041+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-04-01T15:32:28.045+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:32:28.049+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:32:28.054+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:32:28.056+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:32:28.057+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:32:28.348+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:32:28.460+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:32:28.639+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:32:28.706+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:32:28.707+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:32:28.708+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:32:28.708+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:32:28.708+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:32:28.708+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:32:28.708+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:32:28.708+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@759b150a
+2024-04-01T15:32:28.723+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:32:28.730+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:32:28.730+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:32:28.730+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:32:28.733+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.132 seconds (process running for 1906.122)
+2024-04-01T15:32:28.735+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:38:36.571+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:38:36.575+07:00  INFO 2528 --- [Thread-30] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:38:36.609+07:00  INFO 2528 --- [Thread-30] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:38:36.609+07:00  INFO 2528 --- [Thread-30] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:38:36.609+07:00  INFO 2528 --- [Thread-30] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:38:36.609+07:00  INFO 2528 --- [Thread-30] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:38:36.611+07:00  INFO 2528 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:38:36.612+07:00  INFO 2528 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-04-01T15:38:36.617+07:00  INFO 2528 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-04-01T15:38:36.709+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:38:36.709+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:38:36.902+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:38:36.948+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:38:37.105+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:38:37.106+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:38:37.106+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:38:37.130+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:38:37.130+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 419 ms
+2024-04-01T15:38:37.162+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-04-01T15:38:37.163+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:38:37.168+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5aeb811
+2024-04-01T15:38:37.168+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-04-01T15:38:37.170+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:38:37.173+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:38:37.177+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:38:37.180+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:38:37.180+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:38:37.336+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:38:37.446+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:38:37.806+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:38:37.900+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:38:37.900+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:38:37.900+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:38:37.900+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:38:37.901+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:38:37.901+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:38:37.901+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:38:37.901+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@32261773
+2024-04-01T15:38:37.912+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:38:37.926+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:38:37.928+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:38:37.929+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:38:37.934+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.253 seconds (process running for 2275.322)
+2024-04-01T15:38:37.937+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:40:21.804+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:40:21.808+07:00  INFO 2528 --- [Thread-34] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:40:21.840+07:00  INFO 2528 --- [Thread-34] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:40:21.840+07:00  INFO 2528 --- [Thread-34] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:40:21.840+07:00  INFO 2528 --- [Thread-34] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:40:21.840+07:00  INFO 2528 --- [Thread-34] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:40:21.841+07:00  INFO 2528 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:40:21.841+07:00  INFO 2528 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-04-01T15:40:21.845+07:00  INFO 2528 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-04-01T15:40:21.940+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:40:21.940+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:40:22.127+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:40:22.151+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:40:22.242+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:40:22.244+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:40:22.245+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:40:22.268+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:40:22.269+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2024-04-01T15:40:22.296+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-04-01T15:40:22.297+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:40:22.301+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30d5e797
+2024-04-01T15:40:22.302+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-04-01T15:40:22.303+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:40:22.306+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:40:22.312+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:40:22.314+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:40:22.315+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:40:22.411+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:40:22.821+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:40:23.010+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:40:23.092+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:40:23.095+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:40:23.095+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:40:23.095+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:40:23.095+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:40:23.096+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:40:23.096+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:40:23.097+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5507d2d7
+2024-04-01T15:40:23.107+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:40:23.116+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:40:23.117+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:40:23.117+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:40:23.121+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.207 seconds (process running for 2380.509)
+2024-04-01T15:40:23.124+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:45:28.544+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:45:28.547+07:00  INFO 2528 --- [Thread-38] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:45:28.600+07:00  INFO 2528 --- [Thread-38] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:45:28.600+07:00  INFO 2528 --- [Thread-38] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:45:28.600+07:00  INFO 2528 --- [Thread-38] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:45:28.600+07:00  INFO 2528 --- [Thread-38] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:45:28.602+07:00  INFO 2528 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:45:28.603+07:00  INFO 2528 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-04-01T15:45:28.609+07:00  INFO 2528 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-04-01T15:45:28.708+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:45:28.709+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:45:29.001+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:45:29.029+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:45:29.125+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:45:29.126+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:45:29.126+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:45:29.148+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:45:29.148+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 437 ms
+2024-04-01T15:45:29.174+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-04-01T15:45:29.174+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:45:29.178+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69985353
+2024-04-01T15:45:29.178+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-04-01T15:45:29.180+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:45:29.183+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:45:29.188+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:45:29.190+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:45:29.190+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:45:29.334+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:45:29.419+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:45:29.692+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:45:29.798+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:45:29.799+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ccdf5e0
+2024-04-01T15:45:29.825+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:45:29.834+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:45:29.834+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:45:29.834+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:45:29.845+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.16 seconds (process running for 2687.233)
+2024-04-01T15:45:29.847+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:51:20.628+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T15:51:20.628+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T15:51:20.630+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-01T15:54:19.529+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T15:54:19.535+07:00  INFO 2528 --- [Thread-42] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:54:19.573+07:00  INFO 2528 --- [Thread-42] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T15:54:19.574+07:00  INFO 2528 --- [Thread-42] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T15:54:19.574+07:00  INFO 2528 --- [Thread-42] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T15:54:19.574+07:00  INFO 2528 --- [Thread-42] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T15:54:19.574+07:00  INFO 2528 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:54:19.575+07:00  INFO 2528 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-04-01T15:54:19.578+07:00  INFO 2528 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-04-01T15:54:19.708+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T15:54:19.710+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T15:54:20.033+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T15:54:20.064+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
+2024-04-01T15:54:20.219+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T15:54:20.221+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T15:54:20.223+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T15:54:20.260+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T15:54:20.262+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 548 ms
+2024-04-01T15:54:20.316+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-04-01T15:54:20.318+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T15:54:20.332+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d7522bd
+2024-04-01T15:54:20.332+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-04-01T15:54:20.334+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T15:54:20.340+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T15:54:20.346+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T15:54:20.349+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T15:54:20.349+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T15:54:20.665+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T15:54:20.809+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T15:54:21.103+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T15:54:21.221+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T15:54:21.224+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T15:54:21.225+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T15:54:21.227+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T15:54:21.228+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T15:54:21.230+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T15:54:21.232+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T15:54:21.232+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3330e996
+2024-04-01T15:54:21.246+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T15:54:21.257+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T15:54:21.258+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T15:54:21.258+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T15:54:21.265+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.61 seconds (process running for 3218.653)
+2024-04-01T15:54:21.268+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T15:57:01.485+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T15:57:01.490+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T15:57:01.491+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-01T16:02:36.237+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T16:02:36.239+07:00  INFO 2528 --- [Thread-46] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:02:36.265+07:00  INFO 2528 --- [Thread-46] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T16:02:36.265+07:00  INFO 2528 --- [Thread-46] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T16:02:36.265+07:00  INFO 2528 --- [Thread-46] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:02:36.265+07:00  INFO 2528 --- [Thread-46] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T16:02:36.266+07:00  INFO 2528 --- [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:02:36.267+07:00  INFO 2528 --- [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-04-01T16:02:36.271+07:00  INFO 2528 --- [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-04-01T16:02:36.375+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T16:02:36.375+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T16:02:36.739+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T16:02:36.767+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
+2024-04-01T16:02:36.885+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T16:02:36.886+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T16:02:36.889+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T16:02:36.918+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T16:02:36.919+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 541 ms
+2024-04-01T16:02:36.956+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-04-01T16:02:36.956+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T16:02:36.968+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2acb9b3b
+2024-04-01T16:02:36.968+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-04-01T16:02:36.971+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T16:02:36.981+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T16:02:36.994+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T16:02:36.997+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T16:02:36.997+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T16:02:37.342+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T16:02:37.794+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:02:38.043+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T16:02:38.138+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T16:02:38.141+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T16:02:38.143+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T16:02:38.143+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T16:02:38.144+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T16:02:38.144+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T16:02:38.144+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T16:02:38.144+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@532956b8
+2024-04-01T16:02:38.157+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T16:02:38.166+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T16:02:38.167+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T16:02:38.167+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T16:02:38.174+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.839 seconds (process running for 3715.562)
+2024-04-01T16:02:38.178+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T16:02:56.337+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T16:02:56.340+07:00  INFO 2528 --- [Thread-50] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:02:56.382+07:00  INFO 2528 --- [Thread-50] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T16:02:56.382+07:00  INFO 2528 --- [Thread-50] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T16:02:56.382+07:00  INFO 2528 --- [Thread-50] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:02:56.382+07:00  INFO 2528 --- [Thread-50] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T16:02:56.385+07:00  INFO 2528 --- [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:02:56.387+07:00  INFO 2528 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-04-01T16:02:56.391+07:00  INFO 2528 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-04-01T16:02:56.492+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T16:02:56.492+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T16:02:56.690+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T16:02:56.714+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2024-04-01T16:02:56.821+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T16:02:56.822+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T16:02:56.822+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T16:02:56.846+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T16:02:56.847+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 349 ms
+2024-04-01T16:02:56.879+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-04-01T16:02:56.880+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T16:02:56.887+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31a20540
+2024-04-01T16:02:56.887+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-04-01T16:02:56.889+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T16:02:56.894+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T16:02:56.900+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T16:02:56.903+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T16:02:56.903+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T16:02:57.125+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T16:02:57.272+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:02:57.461+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T16:02:57.547+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T16:02:57.551+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T16:02:57.552+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T16:02:57.552+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T16:02:57.554+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T16:02:57.554+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T16:02:57.554+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T16:02:57.554+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1f5a9baf
+2024-04-01T16:02:57.564+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T16:02:57.573+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T16:02:57.574+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T16:02:57.574+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T16:02:57.578+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.117 seconds (process running for 3734.965)
+2024-04-01T16:02:57.580+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T16:03:00.727+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T16:03:00.727+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T16:03:00.728+07:00  INFO 2528 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-01T16:03:00.918+07:00  INFO 2528 --- [http-nio-5555-exec-1] n.t.project1.controller.AdminController  : UserModel: [ntk.tlu.project1.model.UserModel@3d8746a, ntk.tlu.project1.model.UserModel@da6ed4d, ntk.tlu.project1.model.UserModel@3cfdac59, ntk.tlu.project1.model.UserModel@32f82ca4, ntk.tlu.project1.model.UserModel@72c375b5]
+2024-04-01T16:03:17.138+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T16:03:17.141+07:00  INFO 2528 --- [Thread-54] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:03:17.176+07:00  INFO 2528 --- [Thread-54] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T16:03:17.177+07:00  INFO 2528 --- [Thread-54] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T16:03:17.177+07:00  INFO 2528 --- [Thread-54] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:03:17.177+07:00  INFO 2528 --- [Thread-54] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T16:03:17.177+07:00  INFO 2528 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:03:17.177+07:00  INFO 2528 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-04-01T16:03:17.181+07:00  INFO 2528 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-04-01T16:03:17.287+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T16:03:17.287+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T16:03:17.479+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T16:03:17.500+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2024-04-01T16:03:17.593+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T16:03:17.594+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T16:03:17.594+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T16:03:17.621+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T16:03:17.621+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 332 ms
+2024-04-01T16:03:17.652+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-04-01T16:03:17.653+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T16:03:17.660+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f3b810a
+2024-04-01T16:03:17.660+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-04-01T16:03:17.675+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T16:03:17.680+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T16:03:17.686+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T16:03:17.690+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T16:03:17.690+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T16:03:17.839+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T16:03:17.987+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:03:18.183+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T16:03:18.275+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T16:03:18.276+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@78dd172a
+2024-04-01T16:03:18.289+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T16:03:18.299+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T16:03:18.300+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T16:03:18.300+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T16:03:18.303+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.039 seconds (process running for 3755.691)
+2024-04-01T16:03:18.304+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T16:03:29.532+07:00  INFO 2528 --- [http-nio-5555-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T16:03:29.532+07:00  INFO 2528 --- [http-nio-5555-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T16:03:29.535+07:00  INFO 2528 --- [http-nio-5555-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-04-01T16:10:52.980+07:00  INFO 2528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-01T16:10:52.983+07:00  INFO 2528 --- [Thread-58] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:10:53.022+07:00  INFO 2528 --- [Thread-58] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-01T16:10:53.022+07:00  INFO 2528 --- [Thread-58] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-01T16:10:53.022+07:00  INFO 2528 --- [Thread-58] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-01T16:10:53.023+07:00  INFO 2528 --- [Thread-58] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-01T16:10:53.025+07:00  INFO 2528 --- [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:10:53.025+07:00  INFO 2528 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-04-01T16:10:53.028+07:00  INFO 2528 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2024-04-01T16:10:53.146+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Starting Project1Application using Java 20.0.2 with PID 2528 (C:\Users\Admin\Documents\Zalo Received Files\project1\project1\target\classes started by Admin in C:\Users\Admin\Documents\Zalo Received Files\project1\project1)
+2024-04-01T16:10:53.147+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : No active profile set, falling back to 1 default profile: "default"
+2024-04-01T16:10:53.388+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-01T16:10:53.415+07:00  INFO 2528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
+2024-04-01T16:10:53.678+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2024-04-01T16:10:53.678+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-01T16:10:53.679+07:00  INFO 2528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-01T16:10:53.710+07:00  INFO 2528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-04-01T16:10:53.713+07:00  INFO 2528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 562 ms
+2024-04-01T16:10:53.748+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2024-04-01T16:10:53.749+07:00  WARN 2528 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-04-01T16:10:53.753+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@233843cf
+2024-04-01T16:10:53.754+07:00  INFO 2528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2024-04-01T16:10:53.755+07:00  INFO 2528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-01T16:10:53.760+07:00  INFO 2528 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-01T16:10:53.766+07:00  INFO 2528 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-01T16:10:53.769+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-01T16:10:53.770+07:00  WARN 2528 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-01T16:10:53.929+07:00  INFO 2528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-01T16:10:54.118+07:00  INFO 2528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-01T16:10:54.452+07:00  WARN 2528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-01T16:10:54.546+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-01T16:10:54.550+07:00  INFO 2528 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-01T16:10:54.552+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-01T16:10:54.553+07:00  INFO 2528 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-01T16:10:54.553+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-01T16:10:54.553+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-01T16:10:54.553+07:00  INFO 2528 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-01T16:10:54.553+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@20006bb4
+2024-04-01T16:10:54.565+07:00  INFO 2528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-01T16:10:54.572+07:00  INFO 2528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path ''
+2024-04-01T16:10:54.574+07:00  INFO 2528 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-01T16:10:54.576+07:00  INFO 2528 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-01T16:10:54.585+07:00  INFO 2528 --- [restartedMain] ntk.tlu.project1.Project1Application     : Started Project1Application in 1.48 seconds (process running for 4211.973)
+2024-04-01T16:10:54.586+07:00  INFO 2528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-01T16:12:01.562+07:00  INFO 2528 --- [http-nio-5555-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-01T16:12:01.562+07:00  INFO 2528 --- [http-nio-5555-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-01T16:12:01.563+07:00  INFO 2528 --- [http-nio-5555-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
