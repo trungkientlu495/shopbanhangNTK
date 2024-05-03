@@ -19,4 +19,7 @@ public interface BillItemsRepo extends JpaRepository<BillitemsEntity, Long> {
 	@Query("SELECT u.productEntity From BillitemsEntity u")
 	ProductEntity showProduct();
 	
+	@Query("SELECT u From BillitemsEntity u JOIN u.productEntity WHERE u.productEntity.productType LIKE :x ")
+	List<BillitemsEntity> showBillitemsEntities(@Param("x") String danhmuc);
+	
 }

@@ -1,18 +1,16 @@
 package ntk.tlu.project1.services;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ch.qos.logback.classic.Logger;
 import ntk.tlu.project1.entity.BillitemsEntity;
-import ntk.tlu.project1.entity.ProductEntity;
 import ntk.tlu.project1.model.BillitemsModel;
-import ntk.tlu.project1.model.ProductModel;
 import ntk.tlu.project1.repository.BillItemsRepo;
 import ntk.tlu.project1.repository.BillRepo;
 import ntk.tlu.project1.repository.ProductRepo;
@@ -29,6 +27,7 @@ public class BillItemsServices {
 	ProductRepo productRepo;
 	@Autowired
 	ModelMapper modelMapper;
+	private static final Logger logger = LoggerFactory.getLogger(CommentServices.class);
 	public void createBillItems(BillitemsModel billitemsModel) {
 		BillitemsEntity billitemsEntity = modelMapper.map(billitemsModel, BillitemsEntity.class);
 		billItemsRepo.save(billitemsEntity);
@@ -49,5 +48,20 @@ public class BillItemsServices {
 		            .map(entity -> modelMapper.map(entity, BillitemsModel.class))
 		            .collect(Collectors.toList());
 		return billitemsModels;
+	}
+	
+	//SOLUONGDANHMUC
+	public Integer slCategoryBuy(String danhmuc) {
+		List<BillitemsEntity> billitemsEntities = billItemsRepo.showBillitemsEntities(danhmuc);
+		 List<BillitemsModel> billitemsModels = billitemsEntities.stream()
+		            .map(entity -> modelMapper.map(entity, BillitemsModel.class))
+		            .collect(Collectors.toList());
+		 int tong = 0;
+		 for (BillitemsModel billitemsModel : billitemsModels) {
+			int a = Integer.parseInt(billitemsModel.getQuantity());
+			tong+=a;
+		}
+		logger.info("Tong: "+tong);
+		return tong;
 	}
 }

@@ -7,6 +7,9 @@ import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -32,13 +35,6 @@ public class UserServices {
 	ProductCartRepo productCartRepo;
 	@Autowired
 	private ModelMapper modelMapper;
-	// Create User
-	public void createUser(UserModel userModel) {
-		UserEntity userEntity = modelMapper.map(userModel, UserEntity.class);
-		userEntity.setPassword(new BCryptPasswordEncoder().encode(userModel.getPassword()));
-		userEntity.setRepassword(new BCryptPasswordEncoder().encode(userModel.getPassword()));
-		userRepo.save(userEntity);
-	}
 
 	// CHECK LOGIN
 //	public boolean checkLogin(String email, String password) {
@@ -50,39 +46,56 @@ public class UserServices {
 //		}
 //		return false;
 //	}
-	
+
+	// SHOW ALL USER
+	@Cacheable(cacheNames = "showAllUser")
+	public Page<UserModel> showAllUser(Pageable pageable) {
+		Page<UserEntity> userEntities = userRepo.findAll(pageable);
+		List<UserModel> userModels = userEntities.stream().map(entity -> modelMapper.map(entity, UserModel.class))
+				.collect(Collectors.toList());
+		return new PageImpl<>(userModels, pageable, userEntities.getTotalElements());
+	}
+
+	// Create User
+	@CacheEvict(cacheNames = "showAllUser")
+	public void createUser(UserModel userModel) {
+		UserEntity userEntity = modelMapper.map(userModel, UserEntity.class);
+		userEntity.setPassword(new BCryptPasswordEncoder().encode(userModel.getPassword()));
+		userEntity.setRepassword(new BCryptPasswordEncoder().encode(userModel.getPassword()));
+		userRepo.save(userEntity);
+	}
+
+	@CacheEvict(cacheNames = "showAllUser",key = "#idUser")
 	public void deleteUser(int idUser) {
 		UserEntity userEntity = userRepo.showUserid(idUser);
 		userRepo.deleteUserById(idUser);
 	}
-	
-	// SHOW ALL USER
-	public Page<UserModel> showAllUser(Pageable pageable) {
-		Page<UserEntity> userEntities = userRepo.findAll(pageable);
-		List<UserModel> userModels = userEntities.stream().map(entity -> modelMapper.map(entity, UserModel.class))
-	            .collect(Collectors.toList());
-		return new PageImpl<>(userModels, pageable, userEntities.getTotalElements());
-	}
 
 	// Search User theo Email
+	// @Cacheable(cacheNames = "showUser",key = "#email")
 	public UserModel showUser(String email) {
 		UserEntity userEntity = userRepo.showUser(email);
-		if(userEntity == null) throw new NoResultException();
+		if (userEntity == null)
+			throw new NoResultException();
 		UserModel userModel = modelMapper.map(userEntity, UserModel.class);
 		return userModel;
 	}
 
 	// search theo id
+	// @Cacheable(cacheNames = "showUserid",key = "#id")
 	public UserModel showUserid(int id) {
 		UserEntity userEntity = userRepo.showUserid(id);
 		UserModel userModel = modelMapper.map(userEntity, UserModel.class);
 		return userModel;
 	}
-	
+
 	// search theo Email OR Phone
+	// @Cacheable(cacheNames = "searchEmailOrPhoneUser",key = "#x")
 	public UserModel searchEmailOrPhoneUser(String x) {
+		logger.info("Caches");
 		UserEntity userEntity = userRepo.searchEmailOrPhoneUser(x);
-		if(userEntity == null) throw new NoResultException();
+		if (userEntity == null)
+			throw new NoResultException();
 		UserModel userModel = modelMapper.map(userEntity, UserModel.class);
 		return userModel;
 	}
@@ -109,11 +122,5 @@ public class UserServices {
 			}
 		}
 	}
-	
-	
-
-	
-	
-	
 
 }

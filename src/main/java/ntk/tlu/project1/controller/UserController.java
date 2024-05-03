@@ -170,7 +170,7 @@ public class UserController implements UserDetailsService  {
 	@GetMapping("/dieukhoanvadichvu")
 	public String dieukhoanvadk(HttpSession session, Model model) {
 		String name = (String) session.getAttribute("name");
-		if (name == null && name.isEmpty())
+		if (name == null)
 			return "redirect:/api/login";
 		model.addAttribute("name", name);
 		return "User/dieukhoanvadieukien";

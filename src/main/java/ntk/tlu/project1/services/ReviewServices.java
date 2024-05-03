@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import ntk.tlu.project1.entity.CommentEntity;
@@ -25,8 +27,8 @@ public class ReviewServices implements DateServices {
 	ModelMapper modelMapper;
 	@Autowired
 	CommentRepo commentRepo;
-	public void saveReview(String start, String content, ProductModel productModel,
-			UserModel userModel) {
+
+	public void saveReview(String start, String content, ProductModel productModel, UserModel userModel) {
 //		ReviewEntity reviewEntity = modelMapper.map(reviewModel, ReviewEntity.class);
 //		reviewRepo.save(reviewEntity);
 		ReviewModel reviewModel = new ReviewModel();
@@ -45,12 +47,11 @@ public class ReviewServices implements DateServices {
 		reviewRepo.save(reviewEntity);
 		commentRepo.save(commentEntity);
 	}
-	
+
 	public List<ReviewModel> showReview() {
 		List<ReviewEntity> reviewEntities = reviewRepo.findAll();
 		List<ReviewModel> reviewModels = reviewEntities.stream()
-			    .map(reviewEntitie -> modelMapper.map(reviewEntitie, ReviewModel.class))
-			    .collect(Collectors.toList());
+				.map(reviewEntitie -> modelMapper.map(reviewEntitie, ReviewModel.class)).collect(Collectors.toList());
 		return reviewModels;
 	}
 }

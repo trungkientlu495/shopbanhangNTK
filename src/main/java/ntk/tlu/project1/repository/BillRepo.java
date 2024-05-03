@@ -1,5 +1,6 @@
 package ntk.tlu.project1.repository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,4 +15,8 @@ public interface BillRepo extends JpaRepository<BillEntity, Long> {
 	
 	@Query("SELECT a FROM BillEntity a ORDER BY a.id DESC")
 	List<BillEntity> searchBill();
+	
+	// tim ngay
+	@Query("SELECT a FROM BillEntity a WHERE a.buyDate = :date")
+	List<BillEntity> searchBillTKhoadon(@Param("date") LocalDate date);
 }

@@ -7,10 +7,13 @@
 <link rel="stylesheet" th:href="@{/assets/Admin/css/style.css}">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
 	<div id="viewport">
@@ -34,7 +37,8 @@
 				<li><a th:href="@{/Admin/bill}"> <i
 						class="zmdi zmdi-info-outline"></i> Quản lý đơn hàng
 				</a></li>
-				<li><a th:href="@{/Admin/thongke}"> <i class="zmdi zmdi-settings"></i>Thống kê
+				<li><a th:href="@{/Admin/thongke}"> <i
+						class="zmdi zmdi-settings"></i>Thống kê
 				</a></li>
 				<li><a href="#"> <i class="zmdi zmdi-comment-more"></i>
 						Đăng xuất
@@ -42,99 +46,177 @@
 			</ul>
 		</div>
 		<!-- Content -->
-		<div id="container" style="padding-top: 5%;">
-			<div class="container">
-				<div class="container__one">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Tổng số người dùng</th>
-								<th>Tổng số sản phẩm</th>
-								<th>Tổng doanh thu</th>
-								<th>Số tiền thu nhập</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>John</td>
-								<td>Doe</td>
-								<td>john@example.com</td>
-								<td>john@example.com</td>
-							</tr>
+		<div id="container"
+			style="display: flex; justify-content: space-around; padding: 20px 10%;">
+			<button id="thongkedoanhthu"
+				style="background-color: #FF5722; padding: 5px 4px">THỐNG
+				KÊ DOANH THU</button>
+			<button id="thongketongquan"
+				style="background-color: #fff; padding: 5px 4px">THỐNG KÊ
+				TỔNG QUAN</button>
+		</div>
+		<div id="container" style="padding: 20px 10%;">
+			<div>
 
-						</tbody>
-					</table>
-				</div>
-				<div class="container__two" style="display: flex;">
-					<div id="myChart"></div>
-					<div id="piechart"></div>
-				</div>
 
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Tổng người dùng</th>
+							<th>Tổng sản phẩm</th>
+							<th>Tổng danh mục</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td th:text="${slUser}">30</td>
+							<td th:text="${slProduct}">24</td>
+							<td>3</td>
+						</tr>
+
+					</tbody>
+				</table>
 			</div>
-			<script type="text/javascript">
-				// Load google charts
+
+			<div id="container1" style="display: flex;">
+				<div id="myChart"
+					style="width: 100%; max-width: 600px; height: 500px; float: right;">
+					<div style="display: none" id="Ao" th:text="${slAo}">Áo</div>
+					<div style="display: none" id="Quan" th:text="${slQuan}">Quần</div>
+					<div style="display: none" id="Giay" th:text="${slGiay}">Giày</div>
+				</div>
+				<div id="myChart1"
+					style="width: 100%; max-width: 600px; height: 500px; float: right;">
+					<div style="display: none" id="productSell"
+						th:text="${productSell}">Áo</div>
+				</div>
+			</div>
+
+			<!-- setup gg chart -->
+			<script>
+				var Ao = parseFloat(document.getElementById("Ao").innerText);
+				var Quan = parseFloat(document.getElementById("Quan").innerText);
+				var Giay = parseFloat(document.getElementById("Giay").innerText);
+				console.log(Ao);
 				google.charts.load('current', {
 					'packages' : [ 'corechart' ]
 				});
 				google.charts.setOnLoadCallback(drawChart);
 
-				// Draw the chart and set the chart values
 				function drawChart() {
-					var data = google.visualization.arrayToDataTable([
-							[ 'Task', 'Hours per Day' ], [ 'Quần', 8 ],
-							[ 'Áo', 2 ], [ 'Giày', 4 ],
+
+					// Set Data
+					const data = google.visualization.arrayToDataTable([
+							[ 'Contry', 'Mhl' ], [ 'ÁO', Ao ],
+							[ 'QUẦN', Quan ], [ 'GIÀY', Giay ],
 
 					]);
 
-					// Optional; add a title and set the width and height of the chart
-					var options = {
-						'title' : 'Thống kê sản phẩm bán chạy',
-						'width' : 550,
-						'height' : 400
+					// Set Options
+					const options = {
+						title : 'THỐNG KÊ SỐ DANH MỤC ĐÃ BÁN',
+						is3D : true
 					};
 
-					// Display the chart inside the <div> element with id="piechart"
-					var chart = new google.visualization.PieChart(document
-							.getElementById('piechart'));
-					chart.draw(data, options);
-				}
-
-				//end google chart
-			</script>
-
-			<script type="text/javascript">
-				// Load google charts
-				google.charts.load('current', {
-					'packages' : [ 'corechart' ]
-				});
-				google.charts.setOnLoadCallback(drawChart);
-
-				// Draw the chart and set the chart values
-				function drawChart() {
-					var data = google.visualization.arrayToDataTable([
-							[ 'Task', 'Hours per Day' ], [ 'Quần', 80000 ],
-							[ 'Áo', 20000 ], [ 'Giày', 40000 ],
-
-					]);
-
-					// Optional; add a title and set the width and height of the chart
-					var options = {
-						'title' : 'Thống kê doanh thu cửa hàng',
-						'width' : 550,
-						'height' : 400
-					};
-
-					// Display the chart inside the <div> element with id="piechart"
-					var chart = new google.visualization.PieChart(document
+					// Draw
+					const chart = new google.visualization.PieChart(document
 							.getElementById('myChart'));
 					chart.draw(data, options);
-				}
 
-				//end google chart
+				}
 			</script>
 
-		</div>
+			<!-- setup lich su ban so product theo nam -->
+			<script>
+				var productSell = parseFloat(document
+						.getElementById("productSell").innerText);
+				google.charts.load('current', {
+					'packages' : [ 'corechart' ]
+				});
+				google.charts.setOnLoadCallback(drawChart);
 
-	</div>
+				function drawChart() {
+
+					// Set Data
+					const data = google.visualization.arrayToDataTable([
+							[ 'NĂM', 'SL' ], [ '2021', 55 ], [ '2022', 49 ],
+							[ '2023', 44 ], [ '2024', productSell ], ]);
+
+					// Set Options
+					const options = {
+						title : 'THỐNG KÊ TỔNG SỐ SẢN PHẨM BÁN ĐƯỢC THEO NĂM',
+					};
+
+					// Draw
+					const chart = new google.visualization.BarChart(document
+							.getElementById('myChart1'));
+					chart.draw(data, options);
+
+				}
+			</script>
+			<div id="container2">
+				<div style="padding: 20px 0;">
+					<h2>THỐNG KÊ DOANH THU</h2>
+				</div>
+				<div class="container__one" style="display: flex;">
+					<h4 style="padding-right: 20px">Tìm kiếm theo ngày:</h4>
+					<form style="display: flex; align-items: center;" th:action="@{/Admin/thongke}" method="post">
+						<input type="number" name="day" min="1" max="31" th:value="${day}" style="text-align: center;">
+						<input type="number" name="month" min="1" max="12" th:value="${month}" style="text-align: center;"> <input
+							type="number" name="year" min="2021" max="2024" th:value="${year}" style="text-align: center;">
+						<button type="submit" style="margin-left: 20px;">Thống kê</button>
+					</form>
+				</div>
+				<div id="container">
+					<div>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th style="padding-left: 0 !important;">Tổng Số Tiền Thu
+										Nhập Trong Ngày</th>
+									<th th:utext="${tonghoadon}+'00VNĐ'">300.000VNĐ</th>
+								</tr>
+							</thead>
+							<thead>
+								<tr>
+									<th style="padding-left: 0 !important;">Tổng Doanh Thu
+										Trong Ngày</th>
+									<th th:utext="${tonghoadon}+'00VNĐ'">300.000VNĐ</th>
+
+								</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- an hien menu jquery -->
+			<script>
+				$(document).ready(
+						function() {
+							$("#container1").hide();
+							$("#thongketongquan").click(
+									function() {
+										$("#thongketongquan").css(
+												"background-color", "#FF5722");
+										$("#thongkedoanhthu").css(
+												"background-color", "#FFF");
+										$("#container2").hide();
+										$("#container1").show();
+									});
+							$("#thongkedoanhthu").click(
+									function() {
+										$("#thongkedoanhthu").css(
+												"background-color", "#FF5722");
+										$("#thongketongquan").css(
+												"background-color", "#FFF");
+										$("#container1").hide();
+										$("#container2").show();
+									});
+						});
+			</script>
+			<!-- thong ke hoa don -->
+		</div>
+		<script th:src="@{/assets/js/NTK/Admin/thongke.js}"></script>
 </body>
 </html>
