@@ -93,3 +93,4 @@
 2024-05-08T21:37:47.014+07:00  INFO 10236 --- [http-nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-05-08T21:37:47.015+07:00  INFO 10236 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-05-08T21:37:47.018+07:00  INFO 10236 --- [http-nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-08T21:40:10.518+07:00  INFO 10236 --- [http-nio-5555-exec-8] ntk.tlu.project1.Config.ConfigSecurity   : Email: nguyenduyngoc@gmail.com
