@@ -1,16 +1,10 @@
 package ntk.tlu.project1.services;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -27,7 +21,6 @@ public class BillServices implements DateServices {
 	@Autowired
 	ModelMapper modelMapper;
 	// create bill
-	private static final Logger logger = LoggerFactory.getLogger(BillServices.class);
 	@CacheEvict(cacheNames = "showBill")
 	public BillEntity createBill(BillModel billModel) {
 		BillEntity billEntity = modelMapper.map(billModel, BillEntity.class);

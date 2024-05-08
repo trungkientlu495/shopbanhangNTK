@@ -4,11 +4,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -26,7 +23,6 @@ import ntk.tlu.project1.repository.UserRepo;
 
 @Service
 public class UserServices {
-	private static final Logger logger = LoggerFactory.getLogger(UserServices.class);
 	@Autowired
 	UserRepo userRepo;
 	@Autowired
@@ -92,7 +88,6 @@ public class UserServices {
 	// search theo Email OR Phone
 	// @Cacheable(cacheNames = "searchEmailOrPhoneUser",key = "#x")
 	public UserModel searchEmailOrPhoneUser(String x) {
-		logger.info("Caches");
 		UserEntity userEntity = userRepo.searchEmailOrPhoneUser(x);
 		if (userEntity == null)
 			throw new NoResultException();

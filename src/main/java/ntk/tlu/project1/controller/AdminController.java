@@ -3,7 +3,6 @@ package ntk.tlu.project1.controller;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -30,7 +29,6 @@ import ntk.tlu.project1.services.UserServices;
 @Controller
 @RequestMapping("/Admin")
 public class AdminController {
-	Logger logger = Logger.getLogger(AdminController.class.getName());
 	@Autowired
 	UserServices userServices;
 	@Autowired
@@ -86,8 +84,6 @@ public class AdminController {
 		model.addAttribute("listProductModel", productModels);
 		model.addAttribute("tranghientai", productModels.getNumber());
 		model.addAttribute("tongsotrang", productModels.getTotalPages());
-		logger.info("tranghientai: " + productModels.getNumber());
-		logger.info("tongsotrang: " + productModels.getTotalPages());
 		return "Admin/quanlisanpham";
 	}
 
@@ -96,7 +92,6 @@ public class AdminController {
 	public String searchProduct(@RequestParam("timkiem") String timkiem, Model model, PageDTO pageDTO) {
 		Pageable pageable = PageRequest.of(pageDTO.getNumberPage(), pageDTO.getSizePage());
 		Page<ProductModel> productModels = productServices.searchNameProduct(timkiem, pageable);
-		logger.info("listproductmodel: " + productModels.getContent() + "assss");
 		model.addAttribute("listProductModel", productModels);
 		model.addAttribute("tranghientai", productModels.getNumber());
 		model.addAttribute("tongsotrang", productModels.getTotalPages());

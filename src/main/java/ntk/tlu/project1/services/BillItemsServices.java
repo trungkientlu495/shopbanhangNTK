@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,7 +25,6 @@ public class BillItemsServices {
 	ProductRepo productRepo;
 	@Autowired
 	ModelMapper modelMapper;
-	private static final Logger logger = LoggerFactory.getLogger(CommentServices.class);
 	public void createBillItems(BillitemsModel billitemsModel) {
 		BillitemsEntity billitemsEntity = modelMapper.map(billitemsModel, BillitemsEntity.class);
 		billItemsRepo.save(billitemsEntity);
@@ -61,7 +58,6 @@ public class BillItemsServices {
 			int a = Integer.parseInt(billitemsModel.getQuantity());
 			tong+=a;
 		}
-		logger.info("Tong: "+tong);
 		return tong;
 	}
 }

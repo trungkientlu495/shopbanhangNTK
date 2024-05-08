@@ -4,8 +4,6 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -45,7 +43,6 @@ import ntk.tlu.project1.services.UserServices;
 @RequestMapping("/User")
 //implements UserDetailsService
 public class UserController implements UserDetailsService  {
-	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	@Autowired
 	ProductServices productServices;
 	@Autowired
@@ -119,13 +116,10 @@ public class UserController implements UserDetailsService  {
 		model.addAttribute("kien", kien);
 		session.setAttribute("idProduct", id);
 		Page<CommentModel> commentModels = commentServices.showComment(id,pageable);
-		//logger.info("Comment: "+ commentModels.getContent().getReview().getStartCounter());
 		model.addAttribute("commentModels",commentModels);
 		model.addAttribute("tranghientai",commentModels.getNumber());
 		model.addAttribute("tongsotrang",commentModels.getTotalPages());
-		logger.info("totalpage: "+commentServices.showStart(id, 5));
 		model.addAttribute("tongstar", commentModels.getContent().size());
-		logger.info("Tongsp: "+commentModels.getContent().size());
 		model.addAttribute("five",commentServices.showStart(id, 5));
 		model.addAttribute("four",commentServices.showStart(id, 4));
 		model.addAttribute("three",commentServices.showStart(id, 3));
@@ -364,7 +358,6 @@ public class UserController implements UserDetailsService  {
 		String name = (String) session.getAttribute("name");
 		int idUser = (Integer) session.getAttribute("idUser");
 		model.addAttribute("name", name);
-		logger.info("So luong: " + billServices.showBill(idUser).size());
 		model.addAttribute("billModels", billServices.showBill(idUser));
 		model.addAttribute("listBillitemsModel", billItemsServices.showBillitemsModels());
 		return "/User/historyOrder";
